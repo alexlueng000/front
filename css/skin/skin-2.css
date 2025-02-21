@@ -1,0 +1,16 @@
+/*===================== Premery bg color =====================*/
+:root {
+    --color-primary: #344699; /* 新主色：深蓝色 */
+    --color-secondry: #152332; /* 次色保持不变：深蓝灰 */
+    --color-hover: #e7232d; /* 悬停色保持不变：红色 */
+    --rgba-primary-1: rgba(52, 70, 153, 0.1); /* 基于 #344699 */
+    --rgba-primary-2: rgba(52, 70, 153, 0.2);
+    --rgba-primary-3: rgba(52, 70, 153, 0.3);
+    --rgba-primary-4: rgba(52, 70, 153, 0.4);
+    --rgba-primary-5: rgba(52, 70, 153, 0.5);
+    --rgba-primary-6: rgba(52, 70, 153, 0.6);
+    --rgba-primary-7: rgba(52, 70, 153, 0.7);
+    --rgba-primary-8: rgba(52, 70, 153, 0.8);
+    --rgba-primary-9: rgba(52, 70, 153, 0.9);
+    --text-sec: #2d3239; /* 文本次色保持不变：深灰 */
+}

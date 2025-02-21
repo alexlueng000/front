@@ -1,0 +1,47 @@
+.custom-font {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+
+  .styled-text {
+    z-index: 7;
+    min-width: 640px;
+    max-width: 640px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .styled-text span {
+    position: relative;
+  }
+
+  .styled-text .dot {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ff6f61;
+    position: absolute;
+    left: -10px; /* Adjust position to make it more prominent */
+  }
+
+  .styled-text .item {
+    padding: 0 10px;
+  }
+
+  .counter-text {
+    font-size:100px;
+	font-weight:700;
+  }
+
+  .col-md-service {
+    width: 28%; /* 默认是 25%，适当增加 */
+}

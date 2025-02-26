@@ -35,22 +35,58 @@
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+	.testimonial-two-dots .owl-items {
+    min-height: 540px; /* 假设每行 120px，三行共 360px，根据实际调整 */
+}
 	
 	.customer-logo {
-		width: 100%;
-		height: auto;
-		border-radius: 50%;
-	}
+    /* display: block; */
+    width: 150px;
+    height: 150px;
+    object-fit: contain;/*  确保图片按比例缩放 */
+}
 
 	.customer-logo-rect {
-		width: 100%;
-		height: auto;
+		display: block;
+		width: 150px;
+		height: 150px;
+		object-fit: contain;  /* 确保图片按比例缩放 */
 	}
-	
+
+	/* 图片容器放大 */
+	.radius.style1 {
+		width: 150px; /* 新宽度 */
+		height: 150px; /* 新高度 */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/revolution.min.css">
+
+	<link rel="preload" href="images/customers/customer_0001.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0002.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0003.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0004.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0005.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0006.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0007.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0008.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0009.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0010.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0011.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0012.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0013.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0014.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0015.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0016.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0017.webp" as="image">
+	<link rel="preload" href="images/customers/customer_0018.webp" as="image">
 	
 </head>
 <body id="bg">
@@ -718,7 +754,7 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<!-- Image Carousel start -->
-								<div class="testimonial-two-dots owl-carousel owl-none owl-theme owl-dots-black-full">
+								<div class="testimonial-two-dots owl-items owl-carousel owl-none owl-theme owl-dots-black-full">
 									<!-- 第一页 -->
 									<div>
 										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
@@ -787,63 +823,63 @@
 									<div>
 										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0019.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0019.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0020.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0020.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0021.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0021.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0022.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0022.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0023.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0023.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0024.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0024.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 										</div>
 										
 										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0025.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0025.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0026.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0026.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0027.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0027.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0028.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0028.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0029.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0029.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0030.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0030.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 										</div>
 										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0031.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0031.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0032.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0032.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0033.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0033.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0034.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0034.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">	
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0035.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0035.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0036.webp" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0036.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
 											</div>
 										</div>
 									</div>
@@ -956,7 +992,7 @@
 												<img src="images/customers/customer_0078.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
 											</div>
 										</div>
-										<div class="testimonial-9" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div  style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
 												<img src="images/customers/customer_0079.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
 											</div>
@@ -980,7 +1016,7 @@
 
 									<!-- 第5页 -->
 									<div >
-										<div class="testimonial-9" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
 												<img src="images/customers/customer_0055.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
 											</div>
@@ -1001,7 +1037,7 @@
 											</div>
 										</div>
 										
-										<div class="testimonial-9" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div  style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
 												<img src="images/customers/customer_0061.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
 											</div>
@@ -1009,7 +1045,7 @@
 												<img src="images/customers/customer_0062.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0063.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0063.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
 												<img src="images/customers/customer_0064.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
@@ -1021,15 +1057,15 @@
 												<img src="images/customers/customer_0066.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
 											</div>
 										</div>
-										<div class="testimonial-9" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0067.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0067.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0068.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0068.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0069.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0069.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
 												<img src="images/customers/customer_0070.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
@@ -1038,37 +1074,37 @@
 												<img src="images/customers/customer_0071.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0072.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0072.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 										</div>
 									</div>
 
 									<!-- 第6页 -->
 									<div >
-										<div class="testimonial-9" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0085.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0085.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0086.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0086.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0087.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0087.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0088.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0088.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0089.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0089.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0090.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0090.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
 											</div>
 										</div>
 										
-										<div class="testimonial-9" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0073.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0073.webp" loading="lazy" width="100" height="100" alt="" style=" background-color: #979393;">
 											</div>
 											
 										</div>
@@ -1097,6 +1133,82 @@
     <button class="scroltop style1 white icon-up" type="button"><i class="fas fa-arrow-up"></i></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
+
+<script>
+	$(document).ready(function() {
+		// 初始隐藏轮播
+		$('.testimonial-two-dots').css('opacity', 0);
+	
+		// 初始化轮播函数
+		function initCarousel() {
+			$('.testimonial-two-dots').owlCarousel({
+				items: 1,
+				loop: true,
+				nav: false,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				smartSpeed: 1000,
+				lazyLoad: true,
+				onInitialized: function(event) {
+					// 确保初始化完成后显示
+					$('.testimonial-two-dots').css('opacity', 1);
+					console.log('轮播初始化完成，元素应可见');
+				},
+				onInitialize: function(event) {
+					console.log('轮播开始初始化');
+				}
+			});
+		}
+	
+		// 检查第一页图片加载情况
+		let imagesToLoad = $('.testimonial-two-dots img').slice(0, 18);
+		let loadedCount = 0;
+	
+		if (imagesToLoad.length === 0) {
+			console.log('无图片需要加载，直接初始化');
+			initCarousel();
+		} else {
+			imagesToLoad.each(function() {
+				let img = $(this);
+				if (img[0].complete) {
+					loadedCount++;
+					checkAndInit();
+				} else {
+					img.on('load', function() {
+						loadedCount++;
+						checkAndInit();
+					}).on('error', function() {
+						loadedCount++;
+						checkAndInit();
+					});
+				}
+			});
+	
+			// 超时强制初始化，避免卡住
+			setTimeout(function() {
+				if (loadedCount < imagesToLoad.length) {
+					console.warn('部分图片未加载完成，强制初始化');
+					initCarousel();
+				}
+			}, 5000);
+		}
+	
+		function checkAndInit() {
+			if (loadedCount === imagesToLoad.length) {
+				console.log('所有图片加载完成，开始初始化');
+				initCarousel();
+			}
+		}
+	
+		// 如果 Owl Carousel 未加载，提示错误
+		if (typeof $.fn.owlCarousel === 'undefined') {
+			console.error('Owl Carousel 未加载，请检查脚本引入');
+			$('.testimonial-two-dots').css('opacity', 1); // 临时显示内容
+		}
+	});
+	</script>
+
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/wow/wow.js" defer></script><!-- WOW JS -->
@@ -1126,13 +1238,26 @@
 <script  src="js/rev.slider.js"></script>
 <script src="js/navbar.js"></script>
 <script>
+
+$(document).ready(function() {
+    $('.lazy').lazy({
+        effect: "fadeIn",
+        effectTime: 500,
+        threshold: 200
+    });
+});
+
 jQuery(document).ready(function() {
 	'use strict';
 	dz_rev_slider_1();	
 	$('.lazy').Lazy();
 });	/*ready*/
+
+
+
 </script>
-<script>
+
+<!-- <script>
 $(document).ready(function() {
 
   var sync1 = $("#sync1");
@@ -1239,7 +1364,7 @@ $(document).ready(function() {
 		
 	});
 });
-</script>
+</script> -->
 
 <script>
 	const header = document.getElementById('header');

@@ -2,7 +2,7 @@
 :root {
     --color-primary: #344699; /* 新主色：深蓝色 */
     --color-secondry: #152332; /* 次色保持不变：深蓝灰 */
-    --color-hover: #e7232d; /* 悬停色保持不变：红色 */
+    --color-hover: #30119e; /* 悬停色保持不变：红色 */
     --rgba-primary-1: rgba(52, 70, 153, 0.1); /* 基于 #344699 */
     --rgba-primary-2: rgba(52, 70, 153, 0.2);
     --rgba-primary-3: rgba(52, 70, 153, 0.3);

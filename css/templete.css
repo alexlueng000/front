@@ -499,8 +499,13 @@ h6{
     margin-bottom: 30px;
 }
 .portfolio .dlab-gallery-box {
-    margin-bottom: 0px;
-	padding: 7px; 
+    /* margin-bottom: 0px;
+	padding: 7px;  */
+	/* border: 2px solid #ccc; 边框样式，可调整颜色和粗细 */
+    width: 80%; /* 占满 col-lg-2 的宽度 */
+    height: 100%; /* 固定高度，可根据需求调整 */
+    overflow: hidden; /* 防止内容溢出 */
+    box-sizing: border-box; /* 包含边框在内计算尺寸 */
 }
 .portfolio .btn {
     font-size: 12px; 

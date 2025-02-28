@@ -4355,7 +4355,7 @@ blockquote:before {
 	 height: 220px;
 }
 .dlab-bnr-inr {
-    height: 220px;
+    height: 320px;
     background-size: cover;
     background-position: center center;
     display: table;
@@ -4443,7 +4443,7 @@ blockquote:before {
 		text-align:center;
 	}
 	.dlab-bnr-inr-entry h1{ 
-		margin-bottom:10px;
+		margin-bottom:20px;
 	}
 	.dlab-bnr-inr{
 		padding-bottom: 0;

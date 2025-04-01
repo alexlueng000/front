@@ -1,0 +1,70 @@
+.testimonial-two-dots .owl-items {
+    min-height: 540px; /* 假设每行 120px，三行共 360px，根据实际调整 */
+}
+    
+.customer-logo {
+    /* display: block; */
+    /* width: 150px;
+    height: 150px; */
+    object-fit: contain;/*  确保图片按比例缩放 */
+}
+
+.customer-logo-rect {
+    display: block;
+    /* width: 150px;
+    height: 150px; */
+    object-fit: contain;  /* 确保图片按比例缩放 */
+}
+
+/* 图片容器放大 */
+.radius.style1 {
+    width: 150px; /* 新宽度 */
+    height: 150px; /* 新高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 默认样式：大屏幕6列 */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+/* 中等屏幕：4列 */
+@media (max-width: 1199px) {
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 小屏幕：2列 */
+@media (max-width: 767px) {
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 确保图片自适应容器 */
+.customer-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+#about-us {
+    background-image: url(images/background/1.svg), url(images/background/1.svg);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 800px 800px, 800px 800px;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    p.custom-paragraph { /* 添加一个类名提高特异性 */
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        font-size: medium !important;
+    }
+}

@@ -32,36 +32,47 @@
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-2.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-font.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
-
-	.testimonial-two-dots .owl-items {
-    min-height: 540px; /* 假设每行 120px，三行共 360px，根据实际调整 */
-}
 	
-	.customer-logo {
-    /* display: block; */
-    width: 150px;
-    height: 150px;
-    object-fit: contain;/*  确保图片按比例缩放 */
-}
 
-	.customer-logo-rect {
-		display: block;
-		width: 150px;
-		height: 150px;
-		object-fit: contain;  /* 确保图片按比例缩放 */
+	.list-text {
+		font-family: Roboto;
+		font-size: larger;
+		line-height: 1.8;
+		color: #000;
+		font-weight: 600;
+		hover {
+			color: #000;
+		}
 	}
 
-	/* 图片容器放大 */
-	.radius.style1 {
-		width: 150px; /* 新宽度 */
-		height: 150px; /* 新高度 */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+	@media (max-width: 768px) {
+        .custom-paragraph {
+            font-size: medium !important; /* 缩小字体 */
+            max-width: 100% !important; /* 铺满宽度 */
+            padding: 0 10px; /* 可选：左右内边距，避免贴边 */
+			line-height: 1.6 !important;
+        }
+		
+    }
+	
+	@media (max-width: 768px) {
+        .counter-style-1 .counter {
+            font-size: 36px !important; /* 缩小计数器数字 */
+        }
+        .counter-style-1 span[style*="font-size: 2.5em"] {
+            font-size: 1.5em !important; /* 缩小加号 */
+        }
+        .counter-text {
+            font-size: medium !important; /* 缩小文本 */
+        }
+        .col-6 {
+            padding: 0 5px; /* 调整列间距，避免过于拥挤 */
+        }
+    }
 
 
 	</style>
@@ -94,7 +105,64 @@
 <div id="loading-area"></div>
     <!-- header -->
 
-	<div id="header"></div>
+	<header class="site-header mo-left header navstyle1">
+		<!-- main header -->
+        <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+            <div class="main-bar clearfix bg-primary">
+                <div class="container clearfix">
+                    <!-- website logo -->
+                    <div class="logo-header mostion logo-dark">
+						<img src="images/logo_frtier.png" alt="Desktop Logo" class="logo-desktop">
+                        <img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
+					</div>
+                    <!-- nav toggle button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+                    <!-- main nav -->
+                    <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+						<div class="logo-header d-md-block d-lg-none">
+							<a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+							<li class="active">
+								<a href="javascript:;">首页</a>
+							</li>
+
+
+							<li>
+								<a href="government-service.html">公共采购服务</a>
+							</li>
+							<li>
+								<a href="javascript:;">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu right">
+									<li><a href="https://www.frontbiomedical.com/" target="_blank">生物耗材</a></li>
+                                	<li><a href="#">扫描检测</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">采购通学院</a>
+								
+							</li>
+							<li>
+								<a href="javascript:;">关于我们<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu right">
+									<li><a href="introduction.html">公司简介</a></li>
+									<li><a href="customers.html">服务客户</a></li>
+									<li><a href="contact.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>	
+							
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main header END -->
+    </header>
     <!-- header END -->
 
     <!-- Content -->
@@ -115,34 +183,35 @@
 									<!-- LAYER NR. 1 -->
 									<!-- LAYERS -->
 
-										<div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer" 
-											data-x="['center','center','center','center']" 
-											data-hoffset="['0','0','0','0']" 
-											data-y="['middle','middle','middle','middle']" 
-											data-voffset="['0','0','0','0']" 
-											data-whitespace="nowrap" 
-											data-type="shape" 
-											data-basealign="slide" 
-											data-responsive_offset="off" 
-											data-responsive="off" 
-											data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' 
-											data-textAlign="['left','left','left','left']" 
-											data-paddingtop="[0,0,0,0]" 
-											data-paddingright="[0,0,0,0]" 
-											data-paddingbottom="[0,0,0,0]" 
-											data-paddingleft="[0,0,0,0]" 
-											style="z-index: 2; position: relative; display: inline-block; background-color: rgba(0, 0, 0, 0.1);">
-											<img src="images/hero1.webp" alt="" style="display: block; max-width: 100%; height: auto;">
-										</div>
-										<!-- LAYER NR. 1 -->
+									<div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer" 
+										data-x="['center','center','center','center']" 
+										data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" 
+										data-voffset="['0','0','0','0']" 
+										data-whitespace="nowrap" 
+										data-type="shape" 
+										data-basealign="slide" 
+										data-responsive_offset="off" 
+										data-responsive="off" 
+										data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' 
+										data-textAlign="['left','left','left','left']" 
+										data-paddingtop="[0,0,0,0]" 
+										data-paddingright="[0,0,0,0]" 
+										data-paddingbottom="[0,0,0,0]" 
+										data-paddingleft="[0,0,0,0]" 
+										style="z-index: 2; position: relative; display: inline-block; background-color: rgba(0, 0, 0, 0.1);">
+										<img src="images/hero1.webp" alt="" style="display: block; max-width: 100%; height: auto;">
+									</div>
+									<!-- LAYER NR. 1 -->
 
-									
+								
+									<!-- 第一层文本 -->
 									<div class="tp-caption tp-resizeme" 
 										id="slide-29-layer-3" 
-										data-x="['left','left','left','left']" 
+										data-x="['left','center','center','center']" 
 										data-hoffset="['0','0','0','0']" 
-										data-y="['top','top','top','top']"  
-										data-voffset="['180','280','280','280']"
+										data-y="['top','top','middle','middle']"  
+										data-voffset="['180','300','-120','-150']"
 										data-width="none" 
 										data-height="none" 
 										data-whitespace="nowrap" 
@@ -158,19 +227,19 @@
 										data-paddingright="[0,0,0,0]" 
 										data-paddingbottom="[2,2,2,2]" 
 										data-paddingleft="[0,0,0,0]" 
-										data-fontsize="[20, 20, 20, 20]" 
+										data-fontsize="['18','18','18','18']"
 										style="z-index: 9; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 2px;font-family:Roboto;text-transform:uppercase;">致力于为你提供一站式科研服务
 									</div>
-									
+
 									<!-- 第二层文本 -->
 									<div class="tp-caption" 
 										id="slide-200-layer-3" 
-										data-x="['left','left','left','left']" 
+										data-x="['left','center','center','center']" 
 										data-hoffset="['0','0','0','0']"  
 										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['-140','0','0','0']" 
+										data-voffset="['-140','-80','0','-60']" 
 										data-fontsize="['65','40','40','30']"
-										data-lineheight="['80','40','40','30']"
+										data-lineheight="['80','50','40','30']"
 										data-width="['640','481','500','300']"
 										data-height="none"
 										data-whitespace="normal"
@@ -178,7 +247,7 @@
 										data-responsive_offset="off" 
 										data-responsive="off"
 										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
+										data-textAlign="['left','center','center','center']"
 										data-paddingtop="[0,0,0,0]"
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
@@ -187,162 +256,14 @@
 										30年<br>科研领域服务经验
 									</div>
 
-									<!-- 新增白线层 -->
+									<!-- 白线层 -->
 									<div class="tp-caption tp-shape" 
 										id="slide-200-layer-white-line" 
-										data-x="['left','left','left','left']" 
+										data-x="['left','center','center','center']" 
 										data-hoffset="['0','0','0','0']" 
 										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['-40','0','-5','-10']" 
-										data-width="['560','400','300','200']"
-										data-height="2"
-										data-whitespace="nowrap"
-										data-type="shape" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; background-color: #fff;">
-									</div>
-									
-									<!-- LAYER NR. 3 -->
-									<div class="tp-caption" 
-										id="slide-200-layer-3" 
-										data-x="['left','left','left','left']" 
-										data-hoffset="['0','20','30','40']" 
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['0','0','-5','-10']" 
-										data-fontsize="['24','20','18','16']"
-										data-lineheight="['40','35','30','25']"
-										data-width="['640','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 8px #000000;">
-										政府采购服务<strong style="font-size: 28px; font-weight: 900;"> ·</strong> 生物耗材提供<strong style="font-size: 28px; font-weight: 900;"> · </strong>生物扫描检测服务
-									</div>
-									<!-- 第四层文本 -->
-									<div class="tp-caption" 
-										id="slide-200-layer-3" 
-										data-x="['left','left','left','right']" 
-										data-hoffset="['0','20','30','40']" 
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['40','0','-5','-10']" 
-										data-fontsize="['14','12','10','8']"
-										data-lineheight="['20','35','30','25']"
-										data-width="['520','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 640px; max-width: 1000px; font-size: 14px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000; ">
-										Govermment procurement services<strong style="font-size: 14px; font-weight: 900;"> ·</strong> Provision of biological consumables<strong style="font-size: 14px; font-weight: 900;"> · </strong>Biological scanming and testing services
-									</div>
-									<!-- LAYER NR. 5 -->
-									
-								</li>
-								<!-- slide 2 -->
-								<li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-									<!-- MAIN IMAGE -->
-									
-									<!-- LAYER NR. 1 -->
-									<div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['middle','middle','middle','middle']" 
-									data-voffset="['0','0','0','0']" 
-									data-whitespace="nowrap" 
-									data-type="shape" 
-									data-basealign="slide" 
-									data-responsive_offset="off" 
-									data-responsive="off" 
-									data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' 
-									data-textAlign="['left','left','left','left']" 
-									data-paddingtop="[0,0,0,0]" 
-									data-paddingright="[0,0,0,0]" 
-									data-paddingbottom="[0,0,0,0]" 
-									data-paddingleft="[0,0,0,0]" 
-									style="z-index: 2; position: relative; display: inline-block; background-color: rgba(0, 0, 0, 0.1);">
-								   <img src="images/hero2.webp" alt="" style="display: block; max-width: 100%; height: auto;">
-							   </div>
-									
-									<!-- 第一层文本 -->
-									<div class="tp-caption" 
-										id="slide-200-layer-4" 
-										data-x="['right','right','right','right']" 
-										data-hoffset="['10','20','30','40']" 
-										data-y="['top','top','top','top']" 
-										data-voffset="['200','100','100','100']" 
-										data-fontsize="['18','16','14','14']"
-										data-lineheight="['30','30','26','26']"
-										data-width="['640','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 9; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 2px;font-family:Roboto;text-transform:uppercase;">
-										致力于为你提供一站式科研服务
-									</div>
-
-									<!-- 第二层文本 -->
-									<div class="tp-caption" 
-										id="slide-200-layer-4" 
-										data-x="['right','right','right','right']" 
-										data-hoffset="['10','20','30','40']"  
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['-100','-100','-100','-90']" 
-										data-fontsize="['65','40','40','30']"
-										data-lineheight="['80','40','40','30']"
-										data-width="['640','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; letter-spacing: 4px;  line-height: 30px; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000;">           
-										30年<br>科研领域服务经验
-									</div>
-
-									<!-- 新增白线层 -->
-									<div class="tp-caption tp-shape" 
-										id="slide-200-layer-white-line" 
-										data-x="['middle','middle','middle','middle']" 
-										data-hoffset="['190','20','30','40']" 
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['0','-20','-20','-20']" 
-										data-width="['560','400','300','200']"
+										data-voffset="['-40','-20','50','-20']" 
+										data-width="['560','340','300','280']"
 										data-height="2"
 										data-whitespace="nowrap"
 										data-type="shape" 
@@ -359,21 +280,21 @@
 
 									<!-- 第三层文本 -->
 									<div class="tp-caption" 
-										id="slide-200-layer-4" 
-										data-x="['right','right','right','right']" 
-										data-hoffset="['10','20','30','40']" 
+										id="slide-200-layer-3" 
+										data-x="['left','center','center','center']" 
+										data-hoffset="['0','20','0','0']" 
 										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['40','0','-5','-10']" 
+										data-voffset="['0','20','70','20']" 
 										data-fontsize="['24','20','18','16']"
 										data-lineheight="['40','35','30','25']"
-										data-width="['640','481','500','300']"
+										data-width="['640','500','500','300']"
 										data-height="none"
 										data-whitespace="normal"
 										data-type="text" 
 										data-responsive_offset="off" 
 										data-responsive="off"
 										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
+										data-textAlign="['left','center','center','center']"
 										data-paddingtop="[0,0,0,0]"
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
@@ -384,21 +305,21 @@
 
 									<!-- 第四层文本 -->
 									<div class="tp-caption" 
-										id="slide-200-layer-4" 
-										data-x="['middle','middle','middle','middle']" 
-										data-hoffset="['170','20','30','40']" 
+										id="slide-200-layer-3" 
+										data-x="['left','center','center','center']" 
+										data-hoffset="['0','20','0','0']" 
 										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['80','0','-5','-10']" 
-										data-fontsize="['14','12','10','8']"
-										data-lineheight="['20','35','30','25']"
+										data-voffset="['40','60','120','100']" 
+										data-fontsize="['14','12','12','12']"
+										data-lineheight="['20','20','20','14']"
 										data-width="['520','481','500','300']"
 										data-height="none"
 										data-whitespace="normal"
 										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
+										data-responsive_offset="on" 
+										data-responsive="on"
 										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
+										data-textAlign="['left','center','center','center']"
 										data-paddingtop="[0,0,0,0]"
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
@@ -406,7 +327,157 @@
 										style="z-index: 7; min-width: 640px; max-width: 1000px; font-size: 14px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000; ">
 										Govermment procurement services<strong style="font-size: 14px; font-weight: 900;"> ·</strong> Provision of biological consumables<strong style="font-size: 14px; font-weight: 900;"> · </strong>Biological scanming and testing services
 									</div>
+									<!-- LAYER NR. 5 -->
 									
+								</li>
+								<!-- slide 2 -->
+								<li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+									<!-- MAIN IMAGE -->
+									
+									<!-- LAYER NR. 1 -->
+									<div class="tp-caption tp-shape tp-shapewrapper " 
+										id="slide-200-layer-4" 
+										data-x="['center','center','center','center']" 
+										data-hoffset="['0','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" 
+										data-voffset="['0','0','0','0']" 
+										data-whitespace="nowrap" 
+										data-type="shape" 
+										data-basealign="slide" 
+										data-responsive_offset="off" 
+										data-responsive="off" 
+										data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]' 
+										data-textAlign="['left','left','left','left']" 
+										data-paddingtop="[0,0,0,0]" 
+										data-paddingright="[0,0,0,0]" 
+										data-paddingbottom="[0,0,0,0]" 
+										data-paddingleft="[0,0,0,0]" 
+										style="z-index: 2; position: relative; display: inline-block; background-color: rgba(0, 0, 0, 0.1);">
+										<img src="images/hero2.webp" alt="" style="display: block; max-width: 100%; height: auto;">
+									</div>
+									
+									<!-- 第一层文本 -->
+									<div class="tp-caption tp-resizeme" 
+										id="slide-200-layer-4" 
+										data-x="['center','center','center','center']" 
+										data-hoffset="['90','0','0','0']" 
+										data-y="['middle','top','middle','middle']"  
+										data-voffset="['-200','300','-120','-100']"
+										data-width="none" 
+										data-height="none" 
+										data-whitespace="nowrap" 
+										data-type="text" 
+										data-responsive_offset="on" 
+										data-frames='[{"delay":"+1360","speed":570,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+										data-margintop="[0,0,0,0]" 
+										data-marginright="[0,0,0,0]" 
+										data-marginbottom="[0,0,0,0]" 
+										data-marginleft="[0,0,0,0]" 
+										data-textAlign="['inherit','inherit','inherit','inherit']" 
+										data-paddingtop="[0,0,0,0]" 
+										data-paddingright="[0,0,0,0]" 
+										data-paddingbottom="[2,2,2,2]" 
+										data-paddingleft="[0,0,0,0]" 
+										data-fontsize="['18','18','18','18']"
+										style="z-index: 9; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 2px;font-family:Roboto;text-transform:uppercase;">致力于成为全球领先的生物医学耗材供应商
+									</div>
+
+									<!-- 第二层文本 -->
+									<div class="tp-caption" 
+										id="slide-200-layer-4" 
+										data-x="['right','center','center','center']" 
+										data-hoffset="['10','0','0','0']"  
+										data-y="['middle','middle','middle','middle']" 
+										data-voffset="['-100','-80','-40','-40']" 
+										data-fontsize="['65','40','40','30']"
+										data-lineheight="['80','50','40','30']"
+										data-width="['640','481','500','300']"
+										data-height="none"
+										data-whitespace="normal"
+										data-type="text" 
+										data-responsive_offset="off" 
+										data-responsive="off"
+										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+										data-textAlign="['left','center','center','center']"
+										data-paddingtop="[0,0,0,0]"
+										data-paddingright="[0,0,0,0]"
+										data-paddingbottom="[0,0,0,0]"
+										data-paddingleft="[0,0,0,0]"
+										style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; letter-spacing: 4px;  line-height: 30px; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000;">           
+										服务超200+实验室
+									</div>
+
+									<!-- 新增白线层 -->
+									<div class="tp-caption tp-shape" 
+										id="slide-200-layer-white-line" 
+										data-x="['middle','middle','center','center']" 
+										data-hoffset="['210','0','0','0']" 
+										data-y="['middle','middle','middle','middle']" 
+										data-voffset="['-40','-20','0','-20']" 
+										data-width="['580','340','300','300']"
+										data-height="2"
+										data-whitespace="nowrap"
+										data-type="shape" 
+										data-responsive_offset="off" 
+										data-responsive="off"
+										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+										data-textAlign="['left','left','center','center']"
+										data-paddingtop="[0,0,0,0]"
+										data-paddingright="[0,0,0,0]"
+										data-paddingbottom="[0,0,0,0]"
+										data-paddingleft="[0,0,0,0]"
+										style="z-index: 7; background-color: #fff;">
+									</div>
+									<!-- 第三层文本 -->
+									<div class="tp-caption" 
+										id="slide-200-layer-4" 
+										data-x="['right','center','center','center']" 
+										data-hoffset="['10','20','0','0']" 
+										data-y="['middle','middle','middle','middle']" 
+										data-voffset="['0','20','40','0']" 
+										data-fontsize="['24','20','18','16']"
+										data-lineheight="['40','35','30','25']"
+										data-width="['640','500','500','300']"
+										data-height="none"
+										data-whitespace="normal"
+										data-type="text" 
+										data-responsive_offset="off" 
+										data-responsive="off"
+										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+										data-textAlign="['left','center','center','center']"
+										data-paddingtop="[0,0,0,0]"
+										data-paddingright="[0,0,0,0]"
+										data-paddingbottom="[0,0,0,0]"
+										data-paddingleft="[0,0,0,0]"
+										style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 8px #000000;">
+										华南地区最大血清进口商
+									</div>
+
+									<!-- 第四层文本 -->
+									<!-- <div class="tp-caption" 
+										id="slide-200-layer-4" 
+										data-x="['middle','middle','center','center']" 
+										data-hoffset="['170','20','0','0']" 
+										data-y="['middle','middle','middle','middle']" 
+										data-voffset="['80','60','80','90']" 
+										data-fontsize="['14','12','10','8']"
+										data-lineheight="['20','20','30','25']"
+										data-width="['520','481','500','300']"
+										data-height="none"
+										data-whitespace="normal"
+										data-type="text" 
+										data-responsive_offset="off" 
+										data-responsive="off"
+										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+										data-textAlign="['left','center','center','center']"
+										data-paddingtop="[0,0,0,0]"
+										data-paddingright="[0,0,0,0]"
+										data-paddingbottom="[0,0,0,0]"
+										data-paddingleft="[0,0,0,0]"
+										style="z-index: 7; min-width: 640px; max-width: 1000px; font-size: 14px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000; ">
+										Govermment procurement services<strong style="font-size: 14px; font-weight: 900;"> ·</strong> Provision of biological consumables<strong style="font-size: 14px; font-weight: 900;"> · </strong>Biological scanming and testing services
+									</div> -->
+																	
 								</li>
 								<!-- slide 3 -->
 								<li data-index="rs-300" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -433,125 +504,129 @@
 							   </div>
 									
 									
-									<div class="tp-caption tp-resizeme" 
-										id="slide-300-layer-4"
-										data-x="['left','left','left','left']" 
-										data-hoffset="['-250','0','0','0']" 
-										data-y="['top','top','top','top']"  
-										data-voffset="['400','280','280','280']"
-										data-width="none" 
-										data-height="none" 
-										data-whitespace="nowrap" 
-										data-type="text" 
-										data-responsive_offset="on" 
-										data-frames='[{"delay":"+1360","speed":570,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
-										data-margintop="[0,0,0,0]" 
-										data-marginright="[0,0,0,0]" 
-										data-marginbottom="[0,0,0,0]" 
-										data-marginleft="[0,0,0,0]" 
-										data-textAlign="['inherit','inherit','inherit','inherit']" 
-										data-paddingtop="[0,0,0,0]" 
-										data-paddingright="[0,0,0,0]" 
-										data-paddingbottom="[2,2,2,2]" 
-										data-paddingleft="[0,0,0,0]" 
-										data-fontsize="[20, 20, 20, 20]" 
-										style="z-index: 9; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 2px;font-family:Roboto;text-transform:uppercase;">致力于为你提供一站式科研服务
-									</div>
-									<div class="tp-caption tp-resizeme" 
-										id="slide-200-layer-4" 
-										data-x="['left','left','left','left']" 
-										data-hoffset="['-230','0','0','0']"  
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['60','0','0','0']" 
-										data-fontsize="['65','40','40','30']"
-										data-lineheight="['80','40','40','30']"
-										data-width="['640','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600;  line-height: 30px; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000; letter-spacing: 4px;">           
-										30年<br>科研领域服务经验
-									</div>
+							   <!-- 第一层文本（副标题） -->
+								<div class="tp-caption tp-resizeme" 
+									id="slide-300-layer-4"
+									data-x="['left','center','center','center']" 
+									data-hoffset="['-100','0','0','0']" 
+									data-y="['top','top','middle','middle']"  
+									data-voffset="['400','300','-120','-150']" 
+									data-width="none" 
+									data-height="none" 
+									data-whitespace="nowrap" 
+									data-type="text" 
+									data-responsive_offset="on" 
+									data-frames='[{"delay":"+1360","speed":570,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+									data-margintop="[0,0,0,0]" 
+									data-marginright="[0,0,0,0]" 
+									data-marginbottom="[0,0,0,0]" 
+									data-marginleft="[0,0,0,0]" 
+									data-textAlign="['inherit','inherit','center','center']" 
+									data-paddingtop="[0,0,0,0]" 
+									data-paddingright="[0,0,0,0]" 
+									data-paddingbottom="[2,2,2,2]" 
+									data-paddingleft="[0,0,0,0]" 
+									data-fontsize="['18','18','18','18']"
+									style="z-index: 9; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 2px; font-family:Roboto; text-transform:uppercase;">
+									服务客户超500家
+								</div>
 
-									<!-- 新增白线层 -->
-									<div class="tp-caption tp-shape" 
-										id="slide-300-layer-white-line" 
-										data-x="['left','left','left','left']" 
-										data-hoffset="['-230','0','0','0']" 
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['160','0','-5','-10']" 
-										data-width="['560','400','300','200']"
-										data-height="2"
-										data-whitespace="nowrap"
-										data-type="shape" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; background-color: #fff;">
-									</div>
-									
-									<!-- LAYER NR. 3 -->
-									<div class="tp-caption" 
-										id="slide-300-layer-4" 
-										data-x="['left','left','left','left']" 
-										data-hoffset="['-230','20','30','40']" 
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['200','0','-5','-10']" 
-										data-fontsize="['24','20','18','16']"
-										data-lineheight="['40','35','30','25']"
-										data-width="['640','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 8px #000000;">
-										政府采购服务<strong style="font-size: 28px; font-weight: 900;"> ·</strong> 生物耗材提供<strong style="font-size: 28px; font-weight: 900;"> · </strong>生物扫描检测服务
-									</div>
-									<!-- 第四层文本 -->
-									<div class="tp-caption" 
-										id="slide-300-layer-4" 
-										data-x="['left','left','left','right']" 
-										data-hoffset="['-230','20','30','40']" 
-										data-y="['middle','middle','middle','middle']" 
-										data-voffset="['240','0','-5','-10']" 
-										data-fontsize="['14','12','10','8']"
-										data-lineheight="['20','35','30','25']"
-										data-width="['520','481','500','300']"
-										data-height="none"
-										data-whitespace="normal"
-										data-type="text" 
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[0,0,0,0]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[0,0,0,0]"
-										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 640px; max-width: 1000px; font-size: 14px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000; ">
-										Govermment procurement services<strong style="font-size: 14px; font-weight: 900;"> ·</strong> Provision of biological consumables<strong style="font-size: 14px; font-weight: 900;"> · </strong>Biological scanming and testing services
-									</div>
-									
+								<!-- 第二层文本（主标题） -->
+								<div class="tp-caption tp-resizeme" 
+									id="slide-300-layer-4" 
+									data-x="['left','center','center','center']" 
+									data-hoffset="['-100','0','0','0']"  
+									data-y="['middle','middle','middle','middle']" 
+									data-voffset="['60','-80','-60','-60']" 
+									data-fontsize="['65','40','40','30']"
+									data-lineheight="['80','50','40','30']"
+									data-width="['640','481','500','300']"
+									data-height="none"
+									data-whitespace="normal"
+									data-type="text" 
+									data-responsive_offset="off" 
+									data-responsive="off"
+									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+									data-textAlign="['left','center','center','center']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+									style="z-index: 6; min-width: 800px; max-width: 800px; font-weight: 600; line-height: 30px; white-space: normal; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000; letter-spacing: 4px;">           
+									采购交易额超<br>350亿元
+								</div>
+
+								<!-- 白线层 -->
+								<div class="tp-caption tp-shape" 
+									id="slide-300-layer-white-line" 
+									data-x="['left','center','center','center']" 
+									data-hoffset="['-110','0','0','0']" 
+									data-y="['middle','middle','middle','middle']" 
+									data-voffset="['180','-20','0','-20']" 
+									data-width="['440','340','300','280']"
+									data-height="2"
+									data-whitespace="nowrap"
+									data-type="shape" 
+									data-responsive_offset="on" 
+									data-responsive="on"
+									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+									data-textAlign="['left','left','center','center']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+									style="z-index: 7; background-color: #fff;">
+								</div>
+
+								<!-- 第三层文本（服务项目） -->
+								<div class="tp-caption" 
+									id="slide-300-layer-4" 
+									data-x="['left','center','center','center']" 
+									data-hoffset="['-100','20','0','0']" 
+									data-y="['middle','middle','middle','middle']" 
+									data-voffset="['200','20','40','20']" 
+									data-fontsize="['24','20','18','16']"
+									data-lineheight="['40','35','30','25']"
+									data-width="['640','500','500','300']"
+									data-height="none"
+									data-whitespace="normal"
+									data-type="text" 
+									data-responsive_offset="off" 
+									data-responsive="off"
+									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+									data-textAlign="['left','center','center','center']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+									style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 8px #000000;">
+									构建公共采购云服务平台
+								</div>
+
+								<!-- 第四层文本（英文翻译） -->
+								<!-- <div class="tp-caption" 
+									id="slide-300-layer-4" 
+									data-x="['left','center','center','center']" 
+									data-hoffset="['-100','20','0','0']" 
+									data-y="['middle','middle','middle','middle']" 
+									data-voffset="['240','60','80','90']" 
+									data-fontsize="['14','12','10','8']"
+									data-lineheight="['20','20','20','20']"
+									data-width="['520','481','500','300']"
+									data-height="none"
+									data-whitespace="normal"
+									data-type="text" 
+									data-responsive_offset="off" 
+									data-responsive="off"
+									data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
+									data-textAlign="['left','center','center','center']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+									style="z-index: 7; min-width: 640px; max-width: 1000px; font-size: 14px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif; text-shadow: 4px 4px 8px #000000;">
+									Govermment procurement services<strong style="font-size: 14px; font-weight: 900;"> ·</strong> Provision of biological consumables<strong style="font-size: 14px; font-weight: 900;"> · </strong>Biological scanming and testing services
+								</div> -->
 								</li>
 							</ul>
 							<!-- <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	 -->
@@ -565,19 +640,18 @@
         <!-- contact area -->
         <div class="content-block">
 			<!-- Call To Action End -->
-			<div class="content-block">
+			<div class="content-block" >
 				<!-- About Us -->
-				<div class="section-full bg-white content-inner-2" id="about-us" style="background-image:url(images/background/bg11.jpg);">
-					<div class="container">
+				<div class="section-full bg-white content-inner-2" id="about-us">
 						<div class="section-head text-black text-center">
 							<h2 class="title" style="font-family:Roboto;">我们的优势</h2>
-							<p style="font-size: larger; text-align: left; font-weight: 400; width: 100%; max-width: 1000px; line-height: 1.8;">弗劳恩科技核心团队1995年~2005年，主要从事政府采购基础性外包业务，在政府投资的多个行业如市政工程、电视广播、公安消防、电力水站、道路官网、广场酒店、网络传输、工业品等广泛领域，提供供应链专业服务。2005年开始聚焦于科研领域产品和技术引进服务项目，为国内科研院所、高等院校、医疗机构以及大型企业研发中心等大型企事业单位，提供从实验室设备、耗材等先进产品的引进，到技术咨询、招标咨询、实验室设计建设、国际合同执行、关税减免、履约评价、孵化跟跑式投资等一站式综合性服务，现在已是粤港澳大湾区科研领域供应链服务平台的行业标杆。</p>
+							<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.8;">弗劳恩科技核心团队成立于1995年~2005年，主要从事政府采购基础性外包业务，在政府投资的多个行业如市政工程、电视广播、公安消防、电力水站、道路官网、广场酒店、网络传输、工业品等广泛领域，提供供应链专业服务。2005年开始聚焦于科研领域产品和技术引进服务项目，为国内科研院所、高等院校、医疗机构以及大型企业研发中心等大型企事业单位，提供从实验室设备、耗材等先进产品的引进，到技术咨询、招标咨询、实验室设计建设、国际合同执行、关税减免、履约评价、孵化跟跑式投资等一站式综合性服务，现在已是粤港澳大湾区科研领域供应链服务平台的行业标杆。</p>
 
 							<div class="text-center">
 								<a href="government-service.html" class="site-button btnhover13 button-md">了解更多</a> 
 							</div>
 
-							<div class="section-full content-inner bg-white bg-img-fix">
+							<div class="section-full content-inner bg-img-fix">
 								<div class="container">
 									<div class="section-content">
 										<div class="row">
@@ -660,11 +734,11 @@
 
 				<!-- Our Services -->
 				 <!-- service 1 -->
-				 <div class="section-full bg-gray content-inner">
+				 <div class="section-full bg-blue-dark content-inner"  style="background-image: url(images/background/14.png); background-position: top right; background-repeat: no-repeat; background-size: 800px 800px; position: relative;">
 					<div class="container">
 						<div class="section-head text-center">
-							<h2 class="title">核心业务</h2>
-							<p style="font-size: larger; text-align: center; font-weight: 400; width: 100%; max-width: 1000px; line-height: 1.8;">为科研提速 为创新护航</p>
+							<h2 class="title text-white">核心业务</h2>
+							<p class="custom-paragraph text-white" style="font-size: larger; text-align: center; font-weight: 400; line-height: 1.8;">为科研提速 为创新护航</p>
 						</div>
 						<div class="section-content row">
 							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -675,12 +749,12 @@
 									<div class="icon-content">
 										<h2 class="dlab-tilte">政府采购服务</h2>
 										<ul class="list-circle">
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">一站式科研采购</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">进出口税务咨询</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">减免税、退税代办</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">进出口代理服务</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">深港及国际综合物流服务</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">产品采购及供应链管理</li>
+											<li class="list-text custom-paragraph" >一站式科研采购</li>
+											<li class="list-text custom-paragraph" >进出口税务咨询</li>
+											<li class="list-text custom-paragraph" >减免税、退税代办</li>
+											<li class="list-text custom-paragraph" >进出口代理服务</li>
+											<li class="list-text custom-paragraph" >深港及国际综合物流服务</li>
+											<li class="list-text custom-paragraph" >产品采购及供应链管理</li>
 										</ul>
 									</div>
 								</div>
@@ -693,12 +767,12 @@
 									<div class="icon-content">
 										<h2 class="dlab-tilte">生物耗材供应</h2>
 										<ul class="list-angle-right">
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">胎牛血清</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">其他动物血清</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">血清替代物</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">牛血清蛋白</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">无血清培养基</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400">Lipogro®牛浓缩胆固醇</li>
+											<li class="list-text custom-paragraph" >胎牛血清</li>
+											<li class="list-text custom-paragraph" >其他动物血清</li>
+											<li class="list-text custom-paragraph" >血清替代物</li>
+											<li class="list-text custom-paragraph" >牛血清蛋白</li>
+											<li class="list-text custom-paragraph" >无血清培养基</li>
+											<li class="list-text custom-paragraph" >Lipogro®牛浓缩胆固醇</li>
 										</ul>
 									</div>
 								</div>
@@ -711,12 +785,12 @@
 									<div class="icon-content">
 										<h2 class="dlab-tilte">扫描检测服务</h2>
 										<ul class="list-icon-box primary">
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">小动物骨骼扫描</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">牙齿及牙周组织扫描</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">软组织扫描</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">肿瘤扫描</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">疾病机制研究分析服务</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">生物材料扫描</li>
+											<li class="list-text custom-paragraph" >小动物骨骼扫描</li>
+											<li class="list-text custom-paragraph" >牙齿及牙周组织扫描</li>
+											<li class="list-text custom-paragraph" >软组织扫描</li>
+											<li class="list-text custom-paragraph" >肿瘤扫描</li>
+											<li class="list-text custom-paragraph" >疾病机制研究分析服务</li>
+											<li class="list-text custom-paragraph" >生物材料扫描</li>
 										</ul>
 									</div>
 								</div>
@@ -729,12 +803,12 @@
 									<div class="icon-content">
 										<h2 class="dlab-tilte">政采培训服务</h2>
 										<ul class="list-hand-point green">
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">政策理论分析</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">实务技能学习</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">技术产品操作</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">实操案例分析</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">疑难问题解析</li>
-											<li style="font-family:Roboto; font-size: larger; font-weight: 400;">模拟考场</li>
+											<li class="list-text custom-paragraph" >政策理论分析</li>
+											<li class="list-text custom-paragraph" >实务技能学习</li>
+											<li class="list-text custom-paragraph" >技术产品操作</li>
+											<li class="list-text custom-paragraph" >实操案例分析</li>
+											<li class="list-text custom-paragraph" >疑难问题解析</li>
+											<li class="list-text custom-paragraph" >模拟考场</li>
 										</ul>
 									</div>
 								</div>
@@ -749,7 +823,7 @@
 					<div class="container">
 						<div class="section-head text-center text-black">
 							<h2 class="title">服务客户</h2>
-							<p style="font-size: larger; text-align: center; font-weight: 400; width: 100%; max-width: 1000px; line-height: 1.8;">诚信靠谱，客户为主，卓越超群，合作共赢</p>
+							<p class="custom-paragraph" style="font-size: larger; text-align: center; font-weight: 400; line-height: 1.8;">诚信靠谱，客户为主，卓越超群，合作共赢</p>
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
@@ -757,359 +831,331 @@
 								<div class="testimonial-two-dots owl-items owl-carousel owl-none owl-theme owl-dots-black-full">
 									<!-- 第一页 -->
 									<div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0001.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0001.webp" loading="lazy"  alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0002.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0002.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0003.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0003.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0004.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0004.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0005.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0005.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0006.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0006.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
 										
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0007.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0007.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0008.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0008.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0009.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0009.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0010.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0010.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0011.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0011.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0012.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0012.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0013.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0013.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0014.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0014.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0015.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0015.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0016.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0016.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0017.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0017.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0018.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0018.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
 									</div>
 									<!-- 第二页 -->
 									<div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0019.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0019.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0020.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0020.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0021.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0021.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0022.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0022.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0023.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0023.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0024.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0024.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
 										
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0025.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0025.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0026.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0026.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0027.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0027.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0028.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0028.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0029.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0029.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0030.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0030.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0031.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0031.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0032.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0032.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0033.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0033.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0034.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">	
+												<img src="images/customers/customer_0034.webp" loading="lazy"   alt="" class="customer-logo">	
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0035.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0035.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0036.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0036.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
 									</div>
 
 									<!-- 第三页 -->
 									<div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0037.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0037.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0038.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0038.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0039.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0039.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0040.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0040.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0041.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0041.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0042.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0042.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
 										
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0043.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0043.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0044.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0044.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0045.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0045.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0046.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0046.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0047.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0047.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0048.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0048.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0049.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0049.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0050.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; transform: scale(0.8);">
+												<img src="images/customers/customer_0050.webp" loading="lazy"   alt="" style="width: 100%; height: auto; transform: scale(0.8);">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0051.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0051.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0052.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0052.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0053.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0053.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0054.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/customer_0054.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 										</div>
 									</div>
 									
 									<!-- 第四页 -->
 									<div>
-										<div  style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div  class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/CorelSDK_0055.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/CorelSDK_0055.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/CorelSDK_0056.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/CorelSDK_0056.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/CorelSDK_0057.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/CorelSDK_0057.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/CorelSDK_0058.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo">
+												<img src="images/customers/CorelSDK_0058.webp" loading="lazy"   alt="" class="customer-logo">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0059.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-25.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0060.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer-26.jpg" loading="lazy"   alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 										</div>
 										
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0091.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; transform: scale(0.7);">
+												<img src="images/customers/customer-28.jpg" loading="lazy"   alt="" style="width: 100%; height: auto; transform: scale(0.7);">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0074.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-29.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0075.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-31.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0076.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-35.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0077.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-36.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0078.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0078.webp" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 										</div>
-										<div  style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div  class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0079.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0079.webp" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0080.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer_0080.webp" loading="lazy"   alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0081.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0081.webp" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0082.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0082.webp" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0083.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0083.webp" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0084.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer_0084.webp" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 										</div>
 									</div>
 
 									<!-- 第5页 -->
 									<div >
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0055.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-1.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0056.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-2.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0057.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer-21.jpg" loading="lazy"   alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0058.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer-22.jpg" loading="lazy"   alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0059.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-23.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0060.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer-24.jpg" loading="lazy"   alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 										</div>
 										
-										<div  style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div  class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0061.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-18.jpg" loading="lazy"   alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0062.webp" loading="lazy" width="100" height="100" alt="" style="width: 100%; height: auto; background-color: #979393;">
+												<img src="images/customers/customer-8.jpg" loading="lazy"   alt="" style="width: 100%; height: auto; background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0063.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
+												<img src="images/customers/customer-25.jpg" loading="lazy"   alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0064.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-26.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0065.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-11.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0066.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
+												<img src="images/customers/customer-12.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 										</div>
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
+										<div class="logo-grid">
 											<div class=" radius style1">
-												<img src="images/customers/customer_0067.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
+												<img src="images/customers/customer-13.jpg" loading="lazy"   alt="" style="background-color: #979393;">
+											</div>
+											
+											<div class=" radius style1">
+												<img src="images/customers/customer-15.jpg" loading="lazy"   alt="" style="background-color: #979393;">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0068.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
+												<img src="images/customers/customer-16.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0069.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
+												<img src="images/customers/customer-17.jpg" loading="lazy"   alt="" class="customer-logo-rect">
+											</div>
+											
+											
+											<div class=" radius style1">
+												<img src="images/customers/customer-7.jpg" loading="lazy"   alt="" class="customer-logo-rect">
 											</div>
 											<div class=" radius style1">
-												<img src="images/customers/customer_0070.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0071.webp" loading="lazy" width="100" height="100" alt="" class="customer-logo-rect">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0072.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
+												<img src="images/customers/customer-14.jpg" loading="lazy"   alt="" style="background-color: #979393;">
 											</div>
 										</div>
 									</div>
 
-									<!-- 第6页 -->
-									<!-- <div >
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
-											<div class=" radius style1">
-												<img src="images/customers/customer_0085.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0086.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0087.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0088.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0089.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
-											</div>
-											<div class=" radius style1">
-												<img src="images/customers/customer_0090.webp" loading="lazy" width="100" height="100" alt="" style="background-color: #979393;">
-											</div>
-										</div>
-										
-										<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: center;">
-											<div class=" radius style1">
-												<img src="images/customers/customer_0073.webp" loading="lazy" width="100" height="100" alt="" style=" background-color: #979393;">
-											</div>
-											
-										</div>
-										
-									</div> -->
 								</div>
 							</div>
 						</div>
@@ -1207,7 +1253,7 @@
 			$('.testimonial-two-dots').css('opacity', 1); // 临时显示内容
 		}
 	});
-	</script>
+</script>
 
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
@@ -1228,7 +1274,7 @@
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
 <script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
-<script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
+<!-- <script src="js/dz.ajax.js"></script>CONTACT JS  -->
 
 
 <script src="js/jquery.lazy.min.js"></script>
@@ -1253,121 +1299,11 @@ jQuery(document).ready(function() {
 	$('.lazy').Lazy();
 });	/*ready*/
 
-
-
 </script>
 
-<!-- <script>
-$(document).ready(function() {
 
-  var sync1 = $("#sync1");
-  var sync2 = $("#sync2");
-  var slidesPerPage = 4; //globaly define number of elements per page
-  var syncedSecondary = true;
-
-	  sync1.owlCarousel({
-		items : 1,
-		nav: true,
-		autoplaySpeed: 3000,
-		navSpeed: 3000,
-		paginationSpeed: 3000,
-		slideSpeed: 3000,
-		smartSpeed: 3000,
-        autoplay: 3000,
-		dots: false,
-		loop: true,
-		responsiveRefreshRate : 200,
-		navText: ['<i class="la la-angle-left"></i>', '<i class="la la-angle-right"></i>'],
-	  }).on('changed.owl.carousel', syncPosition);
-
-	  sync2.on('initialized.owl.carousel', function () {
-		  sync2.find(".owl-item").eq(0).addClass("current");
-		}).owlCarousel({
-		items : slidesPerPage,
-		dots: false,
-		nav: false,
-		margin:20,
-		autoplaySpeed: 3000,
-		navSpeed: 3000,
-		paginationSpeed: 3000,
-		slideSpeed: 3000,
-		smartSpeed: 3000,
-        autoplay: 3000,
-		slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-		responsiveRefreshRate : 100,
-		responsive:{
-			0:{
-				items:2
-			},
-			480:{
-				items:2
-			},			
-			768:{
-				items:3
-			},
-			1024:{
-				items:4
-			},
-			1400:{
-				items:4
-			}
-		}
-	  }).on('changed.owl.carousel', syncPosition2);
-
-  function syncPosition(el) {
-    //if you set loop to false, you have to restore this next line
-    //var current = el.item.index;
-    
-    //if you disable loop you have to comment this block
-    var count = el.item.count-1;
-    var current = Math.round(el.item.index - (el.item.count/2) - .5);
-    
-    if(current < 0) {
-      current = count;
-    }
-    if(current > count) {
-      current = 0;
-    }
-    
-    //end block
-
-    sync2
-      .find(".owl-item")
-      .removeClass("current")
-      .eq(current)
-      .addClass("current");
-    var onscreen = sync2.find('.owl-item.active').length - 1;
-    var start = sync2.find('.owl-item.active').first().index();
-    var end = sync2.find('.owl-item.active').last().index();
-    
-    if (current > end) {
-      sync2.data('owl.carousel').to(current, 100, true);
-    }
-    if (current < start) {
-      sync2.data('owl.carousel').to(current - onscreen, 100, true);
-    }
-  }
-  
-  function syncPosition2(el) {
-    if(syncedSecondary) {
-      var number = el.item.index;
-      sync1.data('owl.carousel').to(number, 100, true);
-    }
-  }
-  
-  sync2.on("click", ".owl-item", function(e){
-		e.preventDefault();
-		var number = $(this).index();
-		//sync1.data('owl.carousel').to(number, 300, true);
-		
-		sync1.data('owl.carousel').to(number, 300, true);
-		
-	});
-});
-</script> -->
 
 <script>
-	const header = document.getElementById('header');
 	const footer = document.getElementById('footer');
 
 	fetch('components/header.html')

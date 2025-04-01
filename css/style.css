@@ -1339,6 +1339,12 @@ dl dd {
     background-color: var(--bs-btn-bg);
 }
 
+.bg-blue-dark {
+	--bs-btn-bg: #17151b;   
+    background-color: var(--bs-btn-bg);
+}
+
+
 /* bg transperent */
 .bg-tpw1{
 	background-color:rgba(255,255,255,0.1)
@@ -2914,6 +2920,33 @@ blockquote:before {
 	-webkit-transition:all 0.5s;
 	-o-transition:all 0.5s;
 }
+
+/* 默认显示桌面 Logo，隐藏手机 Logo */
+.logo-desktop {
+    padding-top: 10px;
+    width: 200px; /* 桌面端 Logo 宽度 */
+    height: auto;
+    display: block;
+}
+
+.logo-mobile {
+    padding-top: 10px;
+    width: 24px; /* 手机端 Logo 宽度 */
+    height: 24px;
+    display: none; /* 默认隐藏 */
+    object-fit: contain;
+}
+
+/* 小屏幕时切换显示 */
+@media (max-width: 768px) {
+    .logo-desktop {
+        display: none; /* 隐藏桌面 Logo */
+    }
+    .logo-mobile {
+        display: block; /* 显示手机 Logo */
+    }
+}
+
 .logo-footer {
     display: table;
     vertical-align: middle;
@@ -2936,7 +2969,12 @@ blockquote:before {
     margin-right: auto;
     float: none;
 }
-.logo-header img,
+
+.logo-header img {
+    scale: 3;
+    padding-left: 16px;
+    padding-right: 40px;
+}
 .logo-footer img {
     height: auto;
 	width: 100%;

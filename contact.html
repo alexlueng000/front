@@ -35,14 +35,79 @@
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+	@media (max-width: 768px) {
+		#contactForm {
+			max-width: 100% !important; /* 覆盖内联的 max-width: 50% */
+			padding: 0 10px; /* 可选：添加左右内边距，避免贴边 */
+		}
+	}
 	</style>
+	<script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-area"></div>
 
     <!-- header -->
-    <div id="header"></div>
+    <header class="site-header mo-left header navstyle1">
+		<!-- main header -->
+        <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+            <div class="main-bar clearfix bg-primary">
+                <div class="container clearfix">
+                    <!-- website logo -->
+                    <div class="logo-header mostion logo-dark">
+						<img src="images/logo_frtier.png" alt="Desktop Logo" class="logo-desktop">
+                        <img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
+					</div>
+                    <!-- nav toggle button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+                    <!-- main nav -->
+                    <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+						<div class="logo-header d-md-block d-lg-none">
+							<a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+							<li class="active">
+								<a href="index.html">首页</a>
+							</li>
+
+
+							<li>
+								<a href="government-service.html">公共采购服务</a>
+							</li>
+							<li>
+								<a href="javascript:;">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu right">
+									<li><a href="https://www.frontbiomedical.com/" target="_blank">生物耗材</a></li>
+                                	<li><a href="#">扫描检测</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">采购通学院</a>
+								
+							</li>
+							<li>
+								<a href="javascript:;">关于我们<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu right">
+									<li><a href="introduction.html">公司简介</a></li>
+									<li><a href="customers.html">服务客户</a></li>
+									<li><a href="contact.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>	
+							
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main header END -->
+    </header>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
@@ -66,15 +131,14 @@
         <!-- contact area -->
         <div class="section-full content-inner bg-white contact-style-1">
 			<div class="container">
-                <div class="p-a30 bg-gray clearfix radius-sm">
-					
+				<div class="p-a30 bg-gray clearfix radius-sm">
 					<div class="dzFormMsg"></div>
-					<form method="post" class="dzForm" action="script/contact.php" style="max-width: 50%; margin: 0 auto;">
+					<form method="post" class="dzForm" id="contactForm" action="/submit" style="max-width: 50%; margin: 0 auto;">
 						<h3 class="m-b10" style="margin-bottom: 20px;">请填写您的信息</h3>
 						<input type="hidden" value="Contact" name="dzToDo">
 						<div class="row">
 							<!-- 姓名 -->
-							<div class="col-lg-12">
+							<div class="col-12">
 								<div class="form-group">
 									<label for="dzName">姓名</label>
 									<div class="input-group">
@@ -83,7 +147,7 @@
 								</div>
 							</div>
 							<!-- 电话 -->
-							<div class="col-lg-12">
+							<div class="col-12">
 								<div class="form-group">
 									<label for="dzPhone">电话</label>
 									<div class="input-group">
@@ -92,7 +156,7 @@
 								</div>
 							</div>
 							<!-- 邮箱 -->
-							<div class="col-lg-12">
+							<div class="col-12">
 								<div class="form-group">
 									<label for="dzEmail">邮箱</label>
 									<div class="input-group">
@@ -101,7 +165,7 @@
 								</div>
 							</div>
 							<!-- 单位 -->
-							<div class="col-lg-12">
+							<div class="col-12">
 								<div class="form-group">
 									<label for="dzCompany">单位</label>
 									<div class="input-group">
@@ -110,7 +174,7 @@
 								</div>
 							</div>
 							<!-- 您的需求 -->
-							<div class="col-lg-12">
+							<div class="col-12">
 								<div class="form-group">
 									<label for="dzMessage">您的需求</label>
 									<div class="input-group">
@@ -119,14 +183,16 @@
 								</div>
 							</div>
 							<!-- 提交按钮 -->
-							<div class="col-lg-12">
+							<div class="col-12">
 								<button name="submit" type="submit" value="Submit" class="site-button"> <span>提交</span> </button>
 							</div>
 						</div>
 					</form>
 				</div>          
-            </div>
-        </div>
+			</div>
+		</div>
+		
+		
         <!-- contact area  END -->
     </div>
     <!-- Content END-->
@@ -159,6 +225,39 @@
 
 
 <script src='https://www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
+<script>
+    $(document).ready(function() {
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault(); // 阻止默认表单提交
+            
+            var form = $(this);
+            var formData = form.serialize(); // 序列化表单数据
+            
+            $.ajax({
+                url: 'http://localhost:8001/submit', // 后端地址
+                type: 'POST',
+                data: formData,
+                dataType: 'json',
+                success: function(response) {
+                    var msgBox = $('.dzFormMsg');
+                    if (response.status === 'success') {
+                        msgBox.html('<div class="success">提交成功！</div>');
+                        form[0].reset(); // 清空表单
+                        // 提交成功后跳转到新页面
+                        setTimeout(function() {
+                            window.location.href = 'success.html'; // 跳转到成功页面
+                        }, 1000); // 延迟 1 秒跳转（可选，给用户时间看到成功消息）
+                    } else {
+                        msgBox.html('<div class="error">' + response.message + '</div>');
+                    }
+                },
+                error: function(xhr) {
+                    $('.dzFormMsg').html('<div class="error">' + (xhr.responseJSON?.detail || '提交失败，请稍后重试。') + '</div>');
+                }
+            });
+        });
+    });
+</script>
 
 <script>
 	const header = document.getElementById('header');
@@ -177,5 +276,7 @@
 		});
 </script>
  
+
+
 </body>
 </html>

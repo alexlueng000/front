@@ -38,6 +38,12 @@
 	<!-- Google Font -->
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+		@media (max-width: 768px) {
+        .fw-bold.position-relative {
+            font-size: 40px !important; /* 在手机尺寸下缩小到 40px */
+        }
+    }
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -48,7 +54,64 @@
 <div class="page-wraper">
 <div id="loading-area"></div>
     <!-- header -->
-    <div id="header"></div>
+    <header class="site-header mo-left header navstyle1">
+		<!-- main header -->
+        <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+            <div class="main-bar clearfix bg-primary">
+                <div class="container clearfix">
+                    <!-- website logo -->
+                    <div class="logo-header mostion logo-dark">
+						<img src="images/logo_frtier.png" alt="Desktop Logo" class="logo-desktop">
+                        <img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
+					</div>
+                    <!-- nav toggle button -->
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+                    <!-- main nav -->
+                    <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+						<div class="logo-header d-md-block d-lg-none">
+							<a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+							<li class="active">
+								<a href="index.html">首页</a>
+							</li>
+
+
+							<li>
+								<a href="government-service.html">公共采购服务</a>
+							</li>
+							<li>
+								<a href="javascript:;">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu right">
+									<li><a href="https://www.frontbiomedical.com/" target="_blank">生物耗材</a></li>
+                                	<li><a href="#">扫描检测</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">采购通学院</a>
+								
+							</li>
+							<li>
+								<a href="javascript:;">关于我们<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu right">
+									<li><a href="introduction.html">公司简介</a></li>
+									<li><a href="customers.html">服务客户</a></li>
+									<li><a href="contact.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>	
+							
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main header END -->
+    </header>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
@@ -58,7 +121,7 @@
 				<div class="dz-banner-top"> 
 					<div class="row justify-content-between">
 						<div class="col-lg-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-							<h1 class="fw-bold position-relative" style="font-size: 60px; font-weight: 700;">政府采购服务</h1>
+							<h1 class="fw-bold position-relative" style="font-size: 60px; font-weight: 700;">公共采购服务</h1>
 						</div>
 						<div class="col-lg-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" style="font-family:Roboto; font-size: larger; font-weight: 400;">
 							<p> 采购服务中心拥有众多技术团队，在科研、教育、医疗、生物、水处理、广电、通讯、互联网、集成电路、电子元器件、先进设备制造等领域有着丰富的行业经验，长期为科研系统、卫生系统、教育系统等科教企事业单位提供服务，与众多知名机构结成紧密的商业合作伙伴关系。近五年来，截至2024年，采购交易金额已超350亿。 </p>

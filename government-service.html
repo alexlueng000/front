@@ -40,10 +40,20 @@
 		@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
 		@media (max-width: 768px) {
-        .fw-bold.position-relative {
-            font-size: 40px !important; /* 在手机尺寸下缩小到 40px */
-        }
-    }
+			.fw-bold.position-relative {
+				font-size: 40px !important; /* 在手机尺寸下缩小到 40px */
+			}
+		}
+
+		@media (max-width: 768px) {
+			.custom-paragraph {
+				font-size: medium !important; /* 缩小字体 */
+				max-width: 100% !important; /* 铺满宽度 */
+				padding: 0 10px; /* 可选：左右内边距，避免贴边 */
+				line-height: 1.6 !important;
+			}
+			
+		}
 	</style>
 	
 	<!-- REVOLUTION SLIDER CSS -->
@@ -156,14 +166,14 @@
                     <!-- 一站式科研采购 -->
 					<div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="dlab-post-media dlab-img-effect zoom"> 
-							<img src="images/service1.webp" alt="" class="img-cover">
+							<img src="images/service1.webp" alt="一站式科研采购" class="img-cover">
 						</div>
 					</div>
 					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
 						<div class="service-box style2">
 							<div>
 								<h2 class="title text-black">一站式<br>科研采购</h2>
-								<p style="font-family:Roboto; font-size: larger; font-weight: 400;">为科研人员提供从需求分析到最终交付的全流程采购解决方案。这种服务模式能够帮助科研机构或个人简化采购流程、节省时间和成本，并确保所购产品和服务的质量与合规性。产品涵盖了实验所需的各种物资（如试剂、耗材）、设备、软件乃至咨询服务等。</p>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;">为科研人员提供从需求分析到最终交付的全流程采购解决方案。这种服务模式能够帮助科研机构或个人简化采购流程、节省时间和成本，并确保所购产品和服务的质量与合规性。产品涵盖了实验所需的各种物资（如试剂、耗材）、设备、软件乃至咨询服务等。</p>
 								<a href="contact.html" class="site-button outline outline-2 btnhover11">立即咨询</a>
 							</div>
 						</div>
@@ -174,60 +184,60 @@
 						<div class="service-box style2">
 							<div>
 								<h2 class="title text-black">进出口 <br>税务咨询</h2>
-								<p style="font-family:Roboto; font-size: larger; font-weight: 400;">提供专业的税务顾问，解答客户疑问，并提供定制化的解决方案。通过合理的税务规划，帮助企业降低税负，提高经济效益、降低税务风险，并确保合规性。服务项目包括：税务规划与优化、跨境交易税务筹划、进出口退税咨询、关税和增值税咨询等。</p>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;">提供专业的税务顾问，解答客户疑问，并提供定制化的解决方案。通过合理的税务规划，帮助企业降低税负，提高经济效益、降低税务风险，并确保合规性。服务项目包括：税务规划与优化、跨境交易税务筹划、进出口退税咨询、关税和增值税咨询等。</p>
 								<a href="contact.html" class="site-button outline outline-2 btnhover11">立即咨询</a>
 							</div>
 						</div>
 					</div>
                     <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="dlab-post-media dlab-img-effect zoom"> 
-							<img src="images/service2.webp" alt="" class="img-cover">
+							<img src="images/service2.webp" alt="进出口税务咨询" class="img-cover">
 						</div>
 					</div>
 
                     <!-- 减免税、退税代办 -->
                     <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="dlab-post-media dlab-img-effect zoom"> 
-							<img src="images/service3.webp" alt="" class="img-cover">
+							<img src="images/service3.webp" alt="减免税、退税代办" class="img-cover">
 						</div>
 					</div>
 					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
 						<div class="service-box style2">
 							<div>
 								<h2 class="title text-black">减免税、<br>退税代办</h2>
-								<p style="font-family:Roboto; font-size: larger; font-weight: 400;">帮助科研领域客户在进出口活动中申请并获得合法的税收减免和退税，帮助客户降低税务成本，提高资金周转效率，并确保合规性。服务项目包含政策咨询与解读、资格评估与规划、资料准备与审核、疑难设备归纳、申请递交与跟进等。</p>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;">帮助科研领域客户在进出口活动中申请并获得合法的税收减免和退税，帮助客户降低税务成本，提高资金周转效率，并确保合规性。服务项目包含政策咨询与解读、资格评估与规划、资料准备与审核、疑难设备归纳、申请递交与跟进等。</p>
 								<a href="contact.html" class="site-button outline outline-2 btnhover11">立即咨询</a>
 							</div>
 						</div>
 					</div>
 
-                    <!-- 进出口税务咨询 -->
+                    <!-- 进出口代理服务 -->
                     <div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
 						<div class="service-box style2">
 							<div>
 								<h2 class="title text-black">进出口 <br>代理服务</h2>
-								<p style="font-family:Roboto; font-size: larger; font-weight: 400;">帮助客户处理进出口业务中的各种复杂事务，简化客户流程、降低风险、提高效率，并确保合规性。事务包括但不限于货物的采购、运输、报关、清关、仓储、配送等。科研领域客户可以将复杂的进出口操作交给专业的团队来处理，从而专注于自己的科研成果转化，服务项目包含：市场调研与供应商管理、采购与订单管理、跨境物流与运输安排、报关与清关、仓储与配送等。</p>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;">帮助客户处理进出口业务中的各种复杂事务，简化客户流程、降低风险、提高效率，并确保合规性。事务包括但不限于货物的采购、运输、报关、清关、仓储、配送等。科研领域客户可以将复杂的进出口操作交给专业的团队来处理，从而专注于自己的科研成果转化，服务项目包含：市场调研与供应商管理、采购与订单管理、跨境物流与运输安排、报关与清关、仓储与配送等。</p>
 								<a href="contact.html" class="site-button outline outline-2 btnhover11">立即咨询</a>
 							</div>
 						</div>
 					</div>
                     <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="dlab-post-media dlab-img-effect zoom"> 
-							<img src="images/service4.webp" alt="" class="img-cover">
+							<img src="images/service4.webp" alt="进出口税务咨询" class="img-cover">
 						</div>
 					</div>
 
-                    <!-- 减免税、退税代办 -->
+                    <!-- 产品采购及供应链管理 -->
                     <div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="dlab-post-media dlab-img-effect zoom"> 
-							<img src="images/service5.webp" alt="" class="img-cover">
+							<img src="images/service5.webp" alt="" class="img-cover" alt="产品采购及供应链管理">
 						</div>
 					</div>
 					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
 						<div class="service-box style2">
 							<div>
 								<h2 class="title text-black">产品采购<br>及供应链管理</h2>
-								<p style="font-family:Roboto; font-size: larger; font-weight: 400;">通过系统化的方法，优化从原材料采购到最终产品交付的整个流程，管理和优化企业的采购活动和供应链网络，以确保在正确的时间、正确的地点、以正确的数量和质量提供所需的产品或服务。帮助客户降低成本、提升效率，服务包括从供应商选择、采购谈判、订单管理、库存控制到物流配送等多个环节。</p>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;">通过系统化的方法，优化从原材料采购到最终产品交付的整个流程，管理和优化企业的采购活动和供应链网络，以确保在正确的时间、正确的地点、以正确的数量和质量提供所需的产品或服务。帮助客户降低成本、提升效率，服务包括从供应商选择、采购谈判、订单管理、库存控制到物流配送等多个环节。</p>
 								<a href="contact.html" class="site-button outline outline-2 btnhover11">立即咨询</a>
 							</div>
 						</div>

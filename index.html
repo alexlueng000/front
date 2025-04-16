@@ -33,6 +33,7 @@
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-font.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
@@ -112,10 +113,12 @@
             <div class="main-bar clearfix bg-primary">
                 <div class="container clearfix">
                     <!-- website logo -->
-                    <div class="logo-header mostion logo-dark">
-						<img src="images/logo_frtier.png" alt="Desktop Logo" class="logo-desktop">
-                        <img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
-					</div>
+                    <a href="index.html">
+						<div class="logo-header mostion logo-dark">
+							<img src="images/logo_frtier.png" alt="Desktop Logo" class="logo-desktop">
+							<img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
+						</div>
+					</a>
                     <!-- nav toggle button -->
                     <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span></span>
@@ -172,7 +175,7 @@
 		<div class="main-slider style-two default-banner" id="home">
 			<div class="tp-banner-container">
 				<div class="tp-banner" >
-					<div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="reveal-add-on36" data-source="gallery" style="background:#ffffff;padding:0px;">
+					<div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="reveal-add-on36" data-source="gallery" style="padding:0px;">
 						<!-- START REVOLUTION SLIDER 5.4.7.2 fullscreen mode -->
 						<div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7.2">
 							<ul>	
@@ -202,9 +205,9 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 9; min-width: 600px; max-width: 600px; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: #000;font-family: 'Poppins', sans-serif; border-width:0px;">致力于为你提供一站式科研服务</div>
+										style="z-index: 9; min-width: 600px; max-width: 600px; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; font-family: 'Poppins', sans-serif; border-width:0px; color: #fff; text-shadow: 2px 2px 4px rgba(15, 15, 15, 0.5);">致力于为你提供一站式科研服务</div>
 									<!-- LAYER NR. 1 -->
-									<div class="tp-caption text-primary" 
+									<div class="tp-caption" 
 										id="slide-100-layer-2" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-270','60','60','35']" 
@@ -225,9 +228,9 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 8; min-width: 600px; max-width: 600px; letter-spacing: 2px; white-space: normal; text-transform: capitalize; font-size: 60px; line-height: 60px; font-weight: 700;font-family:'Poppins', sans-serif;border-width:0px;">30年<br>科研领域服务经验</div>
+										style="z-index: 8; min-width: 600px; max-width: 600px; letter-spacing: 2px; white-space: normal; text-transform: capitalize; font-size: 60px; line-height: 60px; font-weight: 700;font-family:'Poppins', sans-serif;border-width:0px; color: #fff;  text-shadow: 2px 2px 4px rgba(19, 18, 18, 0.5)">30年<br>科研领域服务经验</div>
 									<!-- LAYER NR. 2 -->
-									<div class="tp-caption tp-shape tp-shapewrapper " 
+									<!-- <div class="tp-caption tp-shape tp-shapewrapper " 
 										id="slide-100-layer-3" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-270','30','30','15']" 
@@ -246,7 +249,7 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 6;background-color:rgba(255, 255, 255, 0.95);border-color:rgba(0, 0, 0, 0);border-width:0px;"></div>
+										style="z-index: 6;background-color:rgba(255, 255, 255, 0.95);border-color:rgba(0, 0, 0, 0);border-width:0px;"></div> -->
 
 									<!-- LAYER NR. 3 -->
 									<div class="tp-caption" 
@@ -270,11 +273,13 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 17px; line-height: 22px; font-weight: 500; color: rgba(0, 0, 0, 0.85); font-family:'Poppins', sans-serif; border-width:0px;">政府采购服务<strong style="font-size: 28px; font-weight: 900;"> ·</strong> 生物耗材提供<strong style="font-size: 28px; font-weight: 900;"> · </strong>生物扫描检测服务
+										style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 17px; line-height: 22px; font-weight: 500; color: #fff; font-family:'Poppins', sans-serif; border-width:0px; text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.5);
+
+										">政府采购服务<strong style="font-size: 28px; font-weight: 900;"> ·</strong> 生物耗材提供<strong style="font-size: 28px; font-weight: 900;"> · </strong>生物扫描检测服务
 									</div>
 									<!-- LAYER NR. 4 -->
-									<a class="tp-caption rev-btn text-primary" 
-										href="portfolio-grid-2.html"
+									<!-- <a class="tp-caption rev-btn text-primary" 
+										href="government-service.html"
 										id="slide-100-layer-5" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-495','60','60','35']" 
@@ -295,8 +300,8 @@
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[25,25,25,25]"
 										style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 900; font-family:'Poppins', sans-serif; background-color:rgba(0, 0, 0, 0); border-style:solid; border-width:2px; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;">
-											View Portfolio
-									</a>
+											了解更多 
+									</a> -->
 								</li>
 								<!-- slide 2 -->
 								<li data-index="rs-200" data-transition="slideoververtical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="images/main-slider/slide14.jpg" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="2000" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -323,10 +328,10 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 9; min-width: 600px; max-width: 600px; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: #000;font-family: 'Poppins', sans-serif; border-width:0px;">致力于成为全球领先的生物医学耗材供应商
+										style="z-index: 9; min-width: 600px; max-width: 600px; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: #fff;font-family: 'Poppins', sans-serif; border-width:0px; text-shadow: 2px 2px 4px rgba(19, 18, 18, 0.5);">华南地区最大血清进口商
 									</div>
 									<!-- LAYER NR. 1 -->
-									<div class="tp-caption text-primary" 
+									<div class="tp-caption" 
 										id="slide-200-layer-2" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-270','60','60','35']" 
@@ -347,10 +352,10 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 8; min-width: 600px; max-width: 600px; letter-spacing: 2px; white-space: normal; text-transform: capitalize; font-size: 60px; line-height: 60px; font-weight: 700;font-family:'Poppins', sans-serif;border-width:0px;">服务<br>超200+实验室
+										style="z-index: 8; min-width: 600px; max-width: 600px; letter-spacing: 2px; white-space: normal; text-transform: capitalize; font-size: 60px; line-height: 60px; font-weight: 700;font-family:'Poppins', sans-serif;border-width:0px; color: #fff; text-shadow: 2px 2px 4px rgba(15, 15, 15, 0.5);">服务<br>超200+实验室
 									</div>
 									<!-- LAYER NR. 2 -->
-									<div class="tp-caption tp-shape tp-shapewrapper " 
+									<!-- <div class="tp-caption tp-shape tp-shapewrapper " 
 										id="slide-200-layer-3" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-270','30','30','15']" 
@@ -370,7 +375,7 @@
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
 										style="z-index: 6;background-color:rgba(255, 255, 255, 0.95);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-									</div>
+									</div> -->
 
 									<!-- LAYER NR. 3 -->
 									<div class="tp-caption" 
@@ -394,11 +399,13 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 17px; line-height: 22px; font-weight: 500; color: rgba(0, 0, 0, 0.85); font-family:'Poppins', sans-serif; border-width:0px;">华南地区最大血清进口商
+										style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 17px; line-height: 22px; font-weight: 500; color: #fff; font-family:'Poppins', sans-serif; border-width:0px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+										">致力于成为全球领先的生物医学耗材供应商
 									</div>
 									<!-- LAYER NR. 4 -->
-									<a class="tp-caption rev-btn text-primary" 
-										href="portfolio-grid-2.html"
+									<!-- <a class="tp-caption rev-btn text-primary" 
+										href="government-service.html"
 										id="slide-200-layer-5" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-495','60','60','35']" 
@@ -419,8 +426,8 @@
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[25,25,25,25]"
 										style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 900; font-family:'Poppins', sans-serif; background-color:rgba(0, 0, 0, 0); border-style:solid; border-width:2px; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;">
-											View Portfolio
-									</a>
+											了解更多
+									</a> -->
 								</li>
 								<!-- slide 3 -->
 								<li data-index="rs-300" data-transition="slideoververtical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-thumb="images/main-slider/slide14.jpg" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="2000" data-fsslotamount="7" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -447,10 +454,10 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 9; min-width: 600px; max-width: 600px; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: #000;font-family: 'Poppins', sans-serif; border-width:0px;">服务客户超500家
+										style="z-index: 9; min-width: 600px; max-width: 600px; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: #fff;font-family: 'Poppins', sans-serif; border-width:0px; text-shadow: 2px 2px 4px rgba(15, 15, 15, 0.5);">服务客户超500家
 									</div>
 									<!-- LAYER NR. 1 -->
-									<div class="tp-caption text-primary" 
+									<div class="tp-caption" 
 										id="slide-300-layer-2" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-270','60','60','35']" 
@@ -471,10 +478,10 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 8; min-width: 600px; max-width: 600px; letter-spacing: 2px; white-space: normal; text-transform: capitalize; font-size: 60px; line-height: 60px; font-weight: 700;font-family:'Poppins', sans-serif;border-width:0px;">采购<br>交易额超350亿元
+										style="z-index: 8; min-width: 600px; max-width: 600px; letter-spacing: 2px; white-space: normal; text-transform: capitalize; font-size: 60px; line-height: 60px; font-weight: 700;font-family:'Poppins', sans-serif;border-width:0px; color: #fff; text-shadow: 2px 2px 4px rgba(17, 17, 17, 0.5);">采购<br>交易额超350亿元
 									</div>
 									<!-- LAYER NR. 2 -->
-									<div class="tp-caption tp-shape tp-shapewrapper " 
+									<!-- <div class="tp-caption tp-shape tp-shapewrapper " 
 										id="slide-300-layer-3" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-270','30','30','15']" 
@@ -494,7 +501,7 @@
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
 										style="z-index: 6;background-color:rgba(255, 255, 255, 0.95);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-									</div>
+									</div> -->
 
 									<!-- LAYER NR. 3 -->
 									<div class="tp-caption" 
@@ -518,11 +525,13 @@
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[0,0,0,0]"
-										style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 17px; line-height: 22px; font-weight: 500; color: rgba(0, 0, 0, 0.85); font-family:'Poppins', sans-serif; border-width:0px;">构建公共采购云服务平台
+										style="z-index: 7; min-width: 600px; max-width: 600px; white-space: normal; font-size: 17px; line-height: 22px; font-weight: 500; color: rgba(255, 255, 255, 1); font-family:'Poppins', sans-serif; border-width:0px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+										">构建公共采购云服务平台
 									</div>
 									<!-- LAYER NR. 4 -->
-									<a class="tp-caption rev-btn text-primary" 
-										href="portfolio-grid-2.html"
+									<!-- <a class="tp-caption rev-btn text-primary" 
+										href="government-service.html"
 										id="slide-300-layer-5" 
 										data-x="['center','left','left','left']" 
 										data-hoffset="['-495','60','60','35']" 
@@ -543,8 +552,8 @@
 										data-paddingbottom="[0,0,0,0]"
 										data-paddingleft="[25,25,25,25]"
 										style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 900; font-family:'Poppins', sans-serif; background-color:rgba(0, 0, 0, 0); border-style:solid; border-width:2px; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;">
-										查看更多
-									</a>
+										了解更多
+									</a> -->
 								</li>
 							</ul>
 							<!-- <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	 -->
@@ -662,7 +671,7 @@
 							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 								<div class="icon-bx-wraper" data-name="01">
 									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="flaticon-robot-arm"></i></a>
+										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-briefcase"></i></a>
 									</div>
 									<div class="icon-content">
 										<h2 class="dlab-tilte">政府采购服务</h2>
@@ -680,7 +689,7 @@
 							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
 								<div class="icon-bx-wraper" data-name="02">
 									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="flaticon-factory-1"></i></a>
+										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-eyedropper"></i></a>
 									</div>
 									<div class="icon-content">
 										<h2 class="dlab-tilte">生物耗材供应</h2>
@@ -698,7 +707,7 @@
 							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
 								<div class="icon-bx-wraper" data-name="03">
 									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="flaticon-fuel-station"></i></a>
+										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-hospital"></i></a>
 									</div>
 									<div class="icon-content">
 										<h2 class="dlab-tilte">扫描检测服务</h2>
@@ -716,7 +725,7 @@
 							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
 								<div class="icon-bx-wraper" data-name="04">
 									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="flaticon-fuel-truck"></i></a>
+										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-book"></i></a>
 									</div>
 									<div class="icon-content">
 										<h2 class="dlab-tilte">政采培训服务</h2>

@@ -235,7 +235,7 @@
             var formData = form.serialize(); // 序列化表单数据
             
             $.ajax({
-                url: 'http://localhost:8001/submit', // 后端地址
+                url: '/submit', // 后端地址
                 type: 'POST',
                 data: formData,
                 dataType: 'json',

@@ -33,7 +33,7 @@
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-font.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.rel='stylesheet'">
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
@@ -86,28 +86,7 @@
 	<link rel="preload" href="images/hero2.webp" as="image">
 	<link rel="preload" href="images/hero3.webp" as="image">
 
-	<!-- <link rel="preload" href="images/customers/customer_0001.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0002.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0003.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0004.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0005.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0006.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0007.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0008.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0009.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0010.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0011.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0012.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0013.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0014.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0015.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0016.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0017.webp" as="image">
-	<link rel="preload" href="images/customers/customer_0018.webp" as="image">
 
-	
-
-	 -->
 </head>
 <body id="bg">
 <div class="page-wraper">
@@ -1240,17 +1219,23 @@ jQuery(document).ready(function() {
 <script>
 	const footer = document.getElementById('footer');
 
-	fetch('components/header.html')
-		.then(response => response.text())
-		.then(data => {
-			header.innerHTML = data;
-		});
-
+	
 	fetch('components/footer.html')
 		.then(response => response.text())
 		.then(data => {
 			footer.innerHTML = data;
 		});
 </script>
+
+<script>
+	window.addEventListener('load', () => {
+	  const link = document.createElement('link');
+	  link.rel = 'stylesheet';
+	  link.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css';
+	  document.head.appendChild(link);
+	});
+  </script>
+
+
 </body>
 </html>

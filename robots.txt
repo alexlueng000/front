@@ -1,0 +1,8 @@
+# robots.txt for https://www.frtier.cn
+
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Allow: /
+Sitemap: https://www.frtier.cn/sitemap.xml

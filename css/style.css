@@ -2931,8 +2931,9 @@ blockquote:before {
 
 .logo-mobile {
     padding-top: 10px;
-    width: 24px; /* 手机端 Logo 宽度 */
-    height: 24px;
+    margin-left: 48px;
+    width: 48px; /* 手机端 Logo 宽度 */
+    height: 48px;
     display: none; /* 默认隐藏 */
     object-fit: contain;
 }

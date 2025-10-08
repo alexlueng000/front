@@ -6,7 +6,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta name="robots" content="">
-	<meta name="description" content="弗劳恩科技 - 公司简介">
+	<meta name="description" content="弗劳恩科技 - 政府采购服务">
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>弗劳恩科技 - 公司简介</title>
+	<title data-i18n="page.title">弗劳恩科技 - 公共采购服务</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,380 +24,266 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	
-		<!-- STYLESHEETS -->
+	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-2.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
 	@media (max-width: 768px) {
-        .custom-paragraph {
-            font-size: medium !important; /* 缩小字体 */
-            max-width: 100% !important; /* 铺满宽度 */
-            padding: 0 10px; /* 可选：左右内边距，避免贴边 */
+		.fw-bold.position-relative {
+			font-size: 40px !important;
+		}
+	}
+	@media (max-width: 768px) {
+		.custom-paragraph {
+			font-size: medium !important;
+			max-width: 100% !important;
+			padding: 0 10px;
 			line-height: 1.6 !important;
-        }
-    }
+		}
+	}
+	.img-cover{width:100%;height:auto;display:block;}
 	</style>
+
+	<link rel="preload" href="images/output_service1.webp" as="image">
+	<link rel="preload" href="images/output_service2.webp" as="image">
+	<link rel="preload" href="images/output_service3.webp" as="image">
+	<link rel="preload" href="images/output_service4.webp" as="image">
+	<link rel="preload" href="images/output_service5.webp" as="image">
 </head>
 <body id="bg">
 <div class="page-wraper">
 <div id="loading-area"></div>
-    <!-- header -->
-    <header class="site-header mo-left header navstyle1">
-		<!-- main header -->
-        <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
-            <div class="main-bar clearfix bg-primary">
-                <div class="container clearfix">
-                    <!-- website logo -->
-                    <a href="index.html">
+
+	<!-- header（静态保留，避免异步空节点） -->
+	<header class="site-header mo-left header navstyle1">
+		<div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+			<div class="main-bar clearfix bg-primary">
+				<div class="container clearfix">
+					<a href="index.html">
 						<div class="logo-header mostion logo-dark" style="min-height: 80px;">
 							<img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;" alt="Desktop Logo" class="logo-desktop">
-							<img src="images/logo_new.webp" alt="Mobile Logo" class="logo-mobile">
+							<img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
 						</div>
 					</a>
-                    <!-- nav toggle button -->
-                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
-						<span></span>
-						<span></span>
+					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span><span></span><span></span>
 					</button>
 
-                    <!-- main nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown" style="min-height: 80px;">
+					<div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown" style="min-height: 80px;">
 						<div class="logo-header d-md-block d-lg-none">
-							<a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+							<a href="index.html" style="cursor: pointer;"><img src="images/logo_frtier.png" alt=""></a>
 						</div>
-                        <ul class="nav navbar-nav">	
-							<li class="active" style="margin-right: 30px;">
-								<a href="index.html">首页</a>
-							</li>
-
-
+						<ul class="nav navbar-nav">
+							<li style="margin-right: 30px;"><a href="index.html" data-i18n="nav.home">首页</a></li>
+							<li style="margin-right: 30px;"><a href="government-service.html" data-i18n="nav.government">公共采购服务</a></li>
 							<li style="margin-right: 30px;">
-								<a href="government-service.html">公共采购服务</a>
-							</li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+								<a href="javascript:;" data-i18n="nav.biomed">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
 								<ul class="sub-menu right">
-									<li><a href="https://www.frontbiomedical.com/" target="_blank">生物耗材</a></li>
-                                	<li><a href="https://szfront.cn" target="_blank">扫描检测</a></li>
+									<li><a href="https://www.frtbio.com/" target="_blank" data-i18n="nav.biomed_consumables">生物耗材</a></li>
+									<li><a href="https://szfront.cn" target="_blank" data-i18n="nav.biomed_scanning">扫描检测</a></li>
 								</ul>
 							</li>
+							<li style="margin-right: 30px;"><a href="javascript:;" data-i18n="nav.academy">采购通学院</a></li>
 							<li style="margin-right: 30px;">
-								<a href="javascript:;">采购通学院</a>
-								
-							</li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;">关于我们<i class="fas fa-chevron-down"></i></a>
+								<a href="javascript:;" data-i18n="nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
 								<ul class="sub-menu right">
-									<li><a href="introduction.html">公司简介</a></li>
-									<li><a href="customers.html">服务客户</a></li>
-									<li><a href="contact.html">联系我们</a></li>
+									<li><a href="introduction.html" data-i18n="nav.intro">公司简介</a></li>
+									<li><a href="customers.html" data-i18n="nav.customers">服务客户</a></li>
+									<li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
 								</ul>
 							</li>
 						</ul>	
-							
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- main header END -->
-    </header>
-    <!-- header END -->
-    <!-- Content -->
-    <div class="page-content bg-white">
-        <!-- inner page banner -->
-        <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(images/banner/company.webp);">
-            <div class="container">
-                <div class="dlab-bnr-inr-entry">
-                    <h1 class="text-white">公司简介</h1>
-					<!-- Breadcrumb row -->
-					<!-- <div class="breadcrumb-row">
-						<ul class="list-inline">
-							<li><a href="index.html">Home</a></li>
-							<li>Team</li>
-						</ul>
-					</div> -->
-					<!-- Breadcrumb row END -->
-                </div>
-            </div>
-        </div>
-        <!-- inner page banner END -->
-        <!-- contact area -->
-        <div class="content-block">
-			<!-- Our Team -->
-			<div class="section-full content-inner bg-write">
-				<div class="container">
-					<div class="section-head style2 text-center">
-						<h2 class="title">弗劳恩科技</h2>
-
-						<div class="about-content-box" style="max-width: 900px; margin: 0 auto; text-align: left;">
-							<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.8; margin-top: 20px; max-width: 900px;">弗劳恩科技，2005年起步，作为粤港澳大湾区领先的科研综合服务与创新孵化平台，始终专注于为高等院校、科研院所及医疗机构提供全链条科研赋能解决方案。弗劳恩科技创始团队源自大型国企，兼具市场化运营能力与科研资源整合优势，公司以前瞻性视野聚焦"基础研究-技术研发-成果转化"三大核心环节，助力科研生态的升级与产业创新。弗劳恩科技依托近30年的行业深耕构建科研服务生态，打造了覆盖实验设备、技术咨询、课题协作、数据管理及产业孵化的完整服务体系，累计服务100+家科研机构，在深圳科研服务细分市场占有率稳居首位，成为领域内标杆企业。</p>
-							<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.8; max-width: 900px;">弗劳恩科技创新孵化加速引擎，通过战略投资布局生物技术引进、生物医药、医学影像、政府&产业咨询等高技术科技领域，成功孵化科研设施技术引进服务平台、SCANCO Micro CT中国服务中心、血清&生长因子定制中心、政府采购招投标云平台、政府与产业咨询服务等多个产业化项目，推动创新成果和技术实现商业转化，形成"科研服务-项目孵化-产业落地"的良性循环。目前已构建起产学研协同创新平台，覆盖大湾区20+重点实验室协同创新网络，为政府及行业输送联合研究成果。</p>
-	
-							
-								<!-- <h4>企业价值观</h4> -->
-								<div  style="display: flex; align-items: flex-start; gap: 6px;">
-									<i class="bi bi-check-all" style="font-size: 1.3rem; margin-top: 4px;"></i>
-									<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.6; margin: 0; max-width: 900px;">
-									<span style="font-weight: bold;">企业价值观：</span>诚信靠谱，客户为主，卓越超群，合作共赢
-									</p>
-								</div>
-	
-	
-								<!-- <h4>企业服务宗旨</h4> -->
-								<div style="display: flex; align-items: flex-start; gap: 6px; margin-top: 10px;">
-									<i class="bi bi-check-all" style="font-size: 1.3rem; margin-top: 4px;"></i>
-									<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.6; margin: 0; max-width: 900px;">
-										<span style="font-weight: bold;">企业服务宗旨：</span>专业深耕、服务创新、诚信为本、持续赋能
-									</p>
-								</div>
-								<!-- <h4>企业愿景</h4> -->
-								<div style="display: flex; align-items: flex-start; gap: 6px; margin-top: 10px;">
-									<i class="bi bi-check-all" style="font-size: 1.3rem; margin-top: 4px;"></i>
-									<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.6; margin: 0; max-width: 900px;">
-										<span style="font-weight: bold;">企业愿景：</span>打造一流的区域性科研赋能平台
-									</p>
-								</div> 
-								<!-- <h4>企业使命</h4> -->
-								<div style="display: flex; align-items: flex-start; gap: 6px; margin-top: 10px;">
-									<i class="bi bi-check-all" style="font-size: 1.3rem; margin-top: 4px;"></i>
-									<p class="custom-paragraph" style="font-size: larger; text-align: left; font-weight: 400; line-height: 1.6; margin: 0; max-width: 900px;">
-										<span style="font-weight: bold;">企业使命：</span>让科研更有效率，让创新更有价值
-									</p>
-								</div>
-						</div>
-						
-						
-						
-					</div>
-
-
-					<div class="section-head style2 text-center" style="margin-top: 80px;">
-						<h2 class="title">公司发展历程</h2>
-						<p style="font-size: larger; text-align: center; font-weight: 400; width: 100%; max-width: 1000px; line-height: 1.8; margin-top: 20px;">创新驱动的发展之路</p>
-					</div>
-					<div class="team-carousel owl-carousel owl-btn-3 owl-theme owl-btn-center-lr">
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="从事政府采购对外贸易基础性外包业务" src="images/adventure/adventure1995.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2005年前</h4>
-									<span class="dlab-position">从事政府采购对外贸易基础性外包业务</span>
-									
-								</div>
-							</div>
-						</div>
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="初步构建新型政府采购供应链服务平台" src="images/adventure/adventure2006.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2006年</h4>
-									<span class="dlab-position">初步构建新型政府采购供应链服务平台</span>
-									
-								</div>
-							</div>
-						</div>
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="科研领域政府供应链服务平台搭建" src="images/adventure/adventure2011_focus.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px; ">2011年</h4>
-									<span class="dlab-position" style="text-align: left;">
-										科研领域政府供应链服务平台搭建，聚焦专业院校、科研院所、医疗机构三大领域
-									</span>
-								</div>
-							</div>
-						</div>
-						
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="科研领域政府供应链服务平台走向成熟" src="images/adventure/adventure2015.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2015年</h4>
-									<span class="dlab-position">科研领域政府供应链服务平台走向成熟</span>
-									
-								</div>
-							</div>
-						</div>
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="开启服务性陪跑式投资之路" src="images/adventure/adventure2016.webp">
-								</div>
-								<div class="dlab-info" >
-									<h4 class="dlab-title" style="margin-top: 20px;">2016年</h4>
-									<span class="dlab-position">开启服务性陪跑式投资之路</span>
-									
-								</div>
-							</div>
-						</div>
-
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="2018年11月首台scanco ct落地南科大" src="images/adventure/Informatization.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2017年</h4>
-									<span class="dlab-position" style="text-align: left;"> 自主开发政府采购全流程电子化技术及落地方案，成功孵化若干中小招标代理机构</span>
-									
-								</div>
-							</div>
-						</div>
-
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="2018年11月首台scanco ct落地南科大" src="images/adventure/labs.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2018年</h4>
-									<span class="dlab-position" style="text-align: left;" >深圳海关首家胎牛血清进口企业， 截至2025年，累计服务200+实验室，是大湾区最大血清进口单位。</span>
-									
-								</div>
-							</div>
-						</div>
-
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="" src="images/adventure/consulting.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2018年</h4>
-									<span class="dlab-position" style="text-align: left;">弗劳恩咨询业务启航，构建"政策研究+产业规划+定制策划"三位一体服务体系。独创G2B定制化咨询模型，深度参与大湾区20+重点项目规划建设。</span>
-									
-								</div>
-							</div>
-						</div>
-						
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="Scanco MicroCT中国深圳扫描服务中心成立" src="images/adventure/adventure2018_building.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2018年</h4>
-									<span class="dlab-position" style="text-align: left;">Scanco MicroCT中国深圳扫描服务中心成立</span>
-									
-								</div>
-							</div>
-						</div>
-						
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-									<img alt="弗劳恩科技合作超过100家" src="images/adventure/adventure2019.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2019年</h4>
-									<span class="dlab-position" style="text-align: left;">合作超过100家高校、医疗机构、研究院所，成为科研领域供应链服务平台的行业标杆</span>
-								</div>
-							</div>
-						</div>
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div>
-										<img alt="科技服务&投资平台迈向成长期" src="images/adventure/adventure2021.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">
-										2021年
-									</h4>
-									<span class="dlab-position" style="text-align: left;">科技服务&投资平台迈向成长期，综合了扫描检测服务、生物耗材供应、新药研发技术引进、干细胞转化研究板块</span>
-								</div>
-							</div>
-						</div>
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div >
-										<img alt="2024年5月荣获“AEO”高级认证企业证书" src="images/adventure/adventure2024_aeo.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2024年</h4>
-									<span class="dlab-position">2024年5月荣获“AEO”高级认证企业证书</span>
-									
-								</div>
-							</div>
-						</div>
-						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-							<div class="dlab-box m-b30 dlab-team7">
-								<div >
-									<img alt="深圳高校合作覆盖率已达95%以上，并将业务延伸至广州、佛山、江门等大湾区核心城市" src="images/adventure/adventure2024.webp">
-								</div>
-								<div class="dlab-info">
-									<h4 class="dlab-title" style="margin-top: 20px;">2024年</h4>
-									<span class="dlab-position" style="text-align: left;">深圳高校合作覆盖率已达95%以上，并将业务延伸至广州、佛山、江门等大湾区核心城市</span>
-									
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Our Team END -->
 		</div>
-		<!-- contact area END -->
-    </div>
-    <!-- Content END-->
-	<!-- Footer -->
-    <div id="footer"></div>
-    <!-- Footer End -->
-    <button class="scroltop fas fa-chevron-up" ></button>
-</div>
-<!-- JAVASCRIPT FILES ========================================= -->
-<script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
-<script src="plugins/wow/wow.js"></script><!-- WOW JS -->
+	</header>
+	<!-- header END -->
 
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
-<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
-<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script><!-- FORM JS -->
-<script src="plugins/magnific-popup/magnific-popup.js"></script><!-- MAGNIFIC POPUP JS -->
-<script src="plugins/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
-<script src="plugins/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
-<script src="plugins/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED -->
-<script src="plugins/masonry/masonry-3.1.4.js"></script><!-- MASONRY -->
-<script src="plugins/masonry/masonry.filter.js"></script><!-- MASONRY -->
-<script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
-<script src="plugins/lightgallery/js/lightgallery-all.min.js"></script><!-- Lightgallery -->
-<script src="plugins/scroll/scrollbar.min.js"></script><!-- scroll -->
-<script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-<script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
-<script src="plugins/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
-<script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
-<script src="js/navbar.js"></script>
+	<!-- Content -->
+	<div class="page-content bg-white">
+		<div class="dz-oil-industry-zone">
+			<div class="container-fluid">				
+				<div class="dz-banner-top"> 
+					<div class="row justify-content-between">
+						<div class="col-lg-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+							<h1 class="fw-bold position-relative" style="font-size: 60px; font-weight: 700;" data-i18n="hero.title">公共采购服务</h1>
+						</div>
+						<div class="col-lg-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" style="font-family:Roboto; font-size: larger; font-weight: 400;">
+							<p class="custom-paragraph" data-i18n="hero.desc">
+								采购服务中心拥有众多技术团队，在科研、教育、医疗、生物、水处理、广电、通讯、互联网、集成电路、电子元器件、先进设备制造等领域有着丰富的行业经验，长期为科研系统、卫生系统、教育系统等科教企事业单位提供服务，与众多知名机构结成紧密的商业合作伙伴关系。截至2024年，采购交易金额已超350亿。
+							</p>
+							<div class="dz-banner-btn d-flex align-items-center">
+								<a href="https://www.szsyjz.com" target="_blank" data-i18n="hero.cta">了解更多
+									<svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+										<path d="M8.75002 19.8548C8.75002 19.5126 8.88172 19.1844 9.11614 18.9424C9.35056 18.7004 9.6685 18.5645 10 18.5645L26.9875 18.5645L25.3625 16.9C25.1271 16.657 24.9949 16.3275 24.9949 15.9838C24.9949 15.6402 25.1271 15.3107 25.3625 15.0677C25.5979 14.8247 25.9171 14.6882 26.25 14.6882C26.5829 14.6882 26.9021 14.8247 27.1375 15.0677L30.8875 18.9387C31.061 19.1201 31.1785 19.3506 31.2252 19.6009C31.2719 19.8512 31.2457 20.1102 31.15 20.3451C31.0562 20.5808 30.897 20.7825 30.6924 20.9249C30.4877 21.0672 30.2468 21.1439 30 21.1451L10 21.1451C9.6685 21.1451 9.35056 21.0092 9.11614 20.7672C8.88172 20.5252 8.75002 20.197 8.75002 19.8548Z" fill="#1F1F1F"/>
+										<path d="M25 23.7258C24.9991 23.556 25.0306 23.3876 25.0928 23.2304C25.155 23.0732 25.2467 22.9302 25.3625 22.8097L29.1125 18.9387C29.3479 18.6957 29.6671 18.5592 30 18.5592C30.1648 18.5592 30.3281 18.5927 30.4803 18.6578C30.6326 18.723 30.771 18.8184 30.8875 18.9387C31.0041 19.059 31.0965 19.2018 31.1596 19.359C31.2227 19.5162 31.2551 19.6847 31.2551 19.8548C31.2551 20.1984 31.1229 20.528 30.8875 20.771L27.1375 24.6419C27.0213 24.7629 26.8831 24.8589 26.7307 24.9244C26.5784 24.9899 26.415 25.0236 26.25 25.0236C26.085 25.0236 25.9216 24.9899 25.7693 24.9244C25.617 24.8589 25.4787 24.7629 25.3625 24.6419C25.2467 24.5213 25.155 24.3784 25.0928 24.2212C25.0306 24.0639 24.9991 23.8956 25 23.7258Z" fill="#1F1F1F"/>
+									</svg>
+								</a>
+							</div>
+						</div><!-- /.col -->
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<!-- Services Blocks -->
+		<div class="content-block">
+			<div class="section-full">
+				<div class="row spno about-industry">
+
+					<!-- 一站式科研采购 -->
+					<div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="dlab-post-media dlab-img-effect zoom"> 
+							<img src="images/output_service1.webp" loading="lazy" alt="一站式科研采购" class="img-cover">
+						</div>
+					</div>
+					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="service-box style2">
+							<div>
+								<h2 class="title text-black" data-i18n-html="services.0.title">一站式<br>科研采购</h2>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;" data-i18n="services.0.desc"></p>
+								<a href="contact.html" class="site-button outline outline-2 btnhover11" data-i18n="cta.contact">立即咨询</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 进出口税务咨询 -->
+					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="service-box style2">
+							<div>
+								<h2 class="title text-black" data-i18n-html="services.1.title">进出口 <br>税务咨询</h2>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;" data-i18n="services.1.desc"></p>
+								<a href="contact.html" class="site-button outline outline-2 btnhover11" data-i18n="cta.contact">立即咨询</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="dlab-post-media dlab-img-effect zoom"> 
+							<img src="images/output_service2.webp" loading="lazy" alt="进出口税务咨询" class="img-cover">
+						</div>
+					</div>
+
+					<!-- 减免税、退税代办 -->
+					<div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="dlab-post-media dlab-img-effect zoom"> 
+							<img src="images/output_service3.webp" loading="lazy" alt="减免税、退税代办" class="img-cover">
+						</div>
+					</div>
+					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="service-box style2">
+							<div>
+								<h2 class="title text-black" data-i18n-html="services.2.title">减免税、<br>退税代办</h2>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;" data-i18n="services.2.desc"></p>
+								<a href="contact.html" class="site-button outline outline-2 btnhover11" data-i18n="cta.contact">立即咨询</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- 进出口代理服务 -->
+					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="service-box style2">
+							<div>
+								<h2 class="title text-black" data-i18n-html="services.3.title">进出口 <br>代理服务</h2>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;" data-i18n="services.3.desc"></p>
+								<a href="contact.html" class="site-button outline outline-2 btnhover11" data-i18n="cta.contact">立即咨询</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="dlab-post-media dlab-img-effect zoom"> 
+							<img src="images/output_service4.webp" loading="lazy" alt="进出口代理服务" class="img-cover">
+						</div>
+					</div>
+
+					<!-- 产品采购及供应链管理 -->
+					<div class="col-lg-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="dlab-post-media dlab-img-effect zoom"> 
+							<img src="images/output_service5.webp" loading="lazy" alt="产品采购及供应链管理" class="img-cover">
+						</div>
+					</div>
+					<div class="col-lg-4 bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="service-box style2">
+							<div>
+								<h2 class="title text-black" data-i18n-html="services.4.title">产品采购<br>及供应链管理</h2>
+								<p class="custom-paragraph" style="font-family:Roboto; font-size: larger; font-weight: 400;" data-i18n="services.4.desc"></p>
+								<a href="contact.html" class="site-button outline outline-2 btnhover11" data-i18n="cta.contact">立即咨询</a>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- /.row -->
+			</div>
+		</div>
+		<!-- Services End -->
+	</div>
+	<!-- Content END -->
+	
+	<!-- Footer -->
+	<div id="footer"></div>
+	<!-- Footer End -->
+	<button class="scroltop style1 radius" type="button"><i class="fas fa-arrow-up"></i></button>
+</div>
+
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="js/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/rev.slider.js"></script>
+<script src="js/navbar.js"></script> 
 
 <script>
-	const header = document.getElementById('header');
-	const footer = document.getElementById('footer');
-
-	fetch('components/header.html')
-		.then(response => response.text())
-		.then(data => {
-			header.innerHTML = data;
-		});
-
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
+jQuery(document).ready(function() {
+	'use strict';
+	// 若使用了 dz_rev_slider_4，可保留；未使用也不会报错
+	if (typeof dz_rev_slider_4 === 'function') dz_rev_slider_4();
+	$('.lazy').Lazy();
+});
 </script>
 
+<!-- i18n 加载（与首页/介绍页保持一致） -->
+<script>
+(function () {
+  function getLang(){const s=localStorage.getItem('lang'); if(s) return s; const n=(navigator.language||'zh').toLowerCase(); return n.startsWith('zh')?'zh':'en'}
+  function get(obj, path){return path.split('.').reduce((o,k)=>o && o[k]!=null ? o[k] : undefined, obj)}
+  async function loadJSON(p){const r=await fetch(p+(/\?/.test(p)?'&':'?')+'v='+Date.now()); if(!r.ok) throw new Error(p); return r.json()}
+  (async function(){
+	const lang = getLang();
+	const [site, data] = await Promise.all([
+	  loadJSON('/content/site.json').catch(()=>({})),
+	  loadJSON(`/content/government-service.${lang}.json`).catch(()=>({}))
+	]);
+	document.querySelectorAll('[data-i18n]').forEach(el=>{
+	  const key = el.getAttribute('data-i18n');
+	  const val = get(data, key) ?? get(site, key);
+	  if (val != null) el.textContent = val;
+	});
+	document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+	  const key = el.getAttribute('data-i18n-html');
+	  const val = get(data, key) ?? get(site, key);
+	  if (val != null) el.innerHTML = val;
+	});
+  })().catch(console.error);
+})();
+</script>
+
+<!-- Footer 片段加载 -->
+<script>
+  const footer = document.getElementById('footer');
+  fetch('components/footer.html')
+	.then(r => r.text())
+	.then(html => { footer.innerHTML = html; })
+	.catch(console.error);
+</script>
 </body>
 </html>

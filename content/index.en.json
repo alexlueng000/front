@@ -1,0 +1,103 @@
+{
+    "nav": {
+        "home": "Home",
+        "government": "Public Procurement",
+        "biomed": "Biomedical Services",
+        "biomed_consumables": "Consumables",
+        "biomed_scanning": "Scanning",
+        "academy": "Academy",
+        "about": "About Us",
+        "intro": "Company",
+        "customers": "Clients",
+        "contact": "Contact"
+    },
+    "hero": {
+        "slides": [
+            {
+            "h1": "Your Trusted One-stop Scientific Research Partner",
+            "h2": "30 Years of Service Excellence",
+            "desc": "Government Procurement · Biomedical Consumables · Scanning & Testing"
+            },
+            {
+            "h1": "Leading Serum Importer in South China",
+            "h2": "Serving Over 200 Laboratories",
+            "desc": "Aiming to Be a Global Leader in Biomedical Supply"
+            },
+            {
+            "h1": "Trusted by 500+ Clients Nationwide",
+            "h2": "Procurement Volume Exceeding ¥3.5 Billion",
+            "desc": "Empowering Public Procurement with Smart Cloud Services"
+            }
+        ]
+    },
+    "about": {
+      "title": "Our Advantages",
+      "desc": "Founded in 1995, Fraun Technology has grown from a government procurement service provider into a trusted partner in scientific research supply chains. We offer end-to-end solutions—from product import and technical consulting to lab construction and tax reduction services—serving universities, hospitals, and research institutes across China. Today, Fraun stands as a benchmark enterprise in the Greater Bay Area’s scientific research industry.",
+      "ctaText": "Learn More",
+      "counters": [
+        { "value": "30",  "label": "Years of Government Procurement Experience" },
+        { "value": "350", "label": "Procurement Volume (Billion RMB)" },
+        { "value": "500", "label": "Clients Served" },
+        { "value": "100", "label": "Research Institutes" },
+        { "value": "100", "label": "Universities" },
+        { "value": "100", "label": "Medical Institutions" },
+        { "value": "50",  "label": "Professional Technicians" },
+        { "value": "95",  "label": "University Coverage in Shenzhen (%)" }
+      ]
+    },
+    "services": {
+      "title": "Core Services",
+      "subtitle": "Accelerating Research · Empowering Innovation",
+      "items": [
+        {
+          "title": "Government Procurement Services",
+          "list": [
+            "One-stop Scientific Procurement",
+            "Import and Export Tax Consulting",
+            "Tax Reduction and Refund Agency",
+            "Import & Export Agency Services",
+            "Integrated Logistics (HK & International)",
+            "Procurement & Supply Chain Services"
+          ]
+        },
+        {
+          "title": "Biomedical Consumables Supply",
+          "list": [
+            "Fetal Bovine Serum",
+            "Other Animal Sera",
+            "Serum Substitutes",
+            "Bovine Serum Albumin (BSA)",
+            "Serum-free Media",
+            "Lipogro® Cholesterol Concentrate"
+          ]
+        },
+        {
+          "title": "Scanning and Testing Services",
+          "list": [
+            "Small Animal Skeletal Scanning",
+            "Dental and Periodontal Tissue Scanning",
+            "Soft Tissue Scanning",
+            "Tumor Scanning",
+            "Disease Mechanism Analysis",
+            "Biomaterial Scanning"
+          ]
+        },
+        {
+          "title": "Procurement Training Services",
+          "list": [
+            "Policy and Theory Analysis",
+            "Practical Skill Training",
+            "Technical Product Operation",
+            "Case Study Workshops",
+            "Problem-solving Sessions",
+            "Mock Exam Practice"
+          ]
+        }
+      ]
+    },
+    "customers": {
+      "title": "Our Clients",
+      "subtitle": "Integrity · Reliability · Customer First · Excellence · Win-win Cooperation"
+    }
+  }
+  

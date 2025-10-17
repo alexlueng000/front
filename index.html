@@ -33,6 +33,7 @@
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
 	<link rel="stylesheet" type="text/css" href="css/custom-font.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.rel='stylesheet'">
 	<!-- Google Font -->
 	<style>
@@ -95,47 +96,74 @@
 
 	<header class="site-header mo-left header navstyle1">
 		<div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
-			<div class="main-bar clearfix bg-primary">
-				<div class="container clearfix">
-					<a href="index.html">
-						<div class="logo-header mostion logo-dark" style="min-height: 80px;">
-							<img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;" alt="Desktop Logo" class="logo-desktop">
-							<img src="images/logo_new.webp" alt="Mobile Logo" class="logo-mobile">
-						</div>
-					</a>
-					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span><span></span><span></span>
-					</button>
-
-					<div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown" style="min-height: 80px;">
-						<div class="logo-header d-md-block d-lg-none">
-							<a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
-						</div>
-						<ul class="nav navbar-nav">
-							<li class="active" style="margin-right: 30px;"><a href="index.html" data-i18n="nav.home">首页</a></li>
-							<li style="margin-right: 30px;"><a href="government-service.html" data-i18n="nav.government">公共采购服务</a></li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;" data-i18n="nav.biomed">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu right">
-									<li><a href="https://www.frtbio.com" target="_blank" data-i18n="nav.biomed_consumables">生物耗材</a></li>
-									<li><a href="https://szfront.cn" target="_blank" data-i18n="nav.biomed_scanning">扫描检测</a></li>
-								</ul>
-							</li>
-							<li style="margin-right: 30px;"><a href="javascript:;" data-i18n="nav.academy">采购通学院</a></li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;" data-i18n="nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu right">
-									<li><a href="introduction.html" data-i18n="nav.intro">公司简介</a></li>
-									<li><a href="customers.html" data-i18n="nav.customers">服务客户</a></li>
-									<li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /.header-nav -->
+		  <div class="main-bar clearfix bg-primary">
+			<!-- 给 container 加上 d-flex 对齐 -->
+			<div class="container clearfix d-flex align-items-center">
+			  <a href="index.html" class="me-3">
+				<div class="logo-header mostion logo-dark" style="min-height: 80px;">
+				  <img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;" alt="Desktop Logo" class="logo-desktop">
+				  <img src="images/logo_new.webp" alt="Mobile Logo" class="logo-mobile">
 				</div>
+			  </a>
+	  
+			  <button class="navbar-toggler collapsed navicon ms-auto d-lg-none" type="button"
+					  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			  </button>
+	  
+			  <!-- 菜单：占据中间，左右可放东西 -->
+			  <div class="header-nav navbar-collapse collapse justify-content-center flex-grow-1"
+				   id="navbarNavDropdown" style="min-height: 80px;">
+				<div class="logo-header d-md-block d-lg-none">
+				  <a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li class="active" style="margin-right: 30px;"><a href="index.html" data-i18n="nav.home">首页</a></li>
+				  <li style="margin-right: 30px;"><a href="government-service.html" data-i18n="nav.government">公共采购服务</a></li>
+				  <li style="margin-right: 30px;">
+					<a href="javascript:;" data-i18n="nav.biomed">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+					<ul class="sub-menu right">
+					  <li><a href="https://www.frontbiomedical.com/" target="_blank" data-i18n="nav.biomed_consumables">生物耗材</a></li>
+					  <li><a href="https://szfront.cn" target="_blank" data-i18n="nav.biomed_scanning">扫描检测</a></li>
+					</ul>
+				  </li>
+				  <li style="margin-right: 30px;"><a href="javascript:;" data-i18n="nav.academy">采购通学院</a></li>
+				  <li style="margin-right: 30px;">
+					<a href="javascript:;" data-i18n="nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
+					<ul class="sub-menu right">
+					  <li><a href="introduction.html" data-i18n="nav.intro">公司简介</a></li>
+					  <li><a href="customers.html" data-i18n="nav.customers">服务客户</a></li>
+					  <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+					</ul>
+				  </li>
+	  
+				  <!-- 移动端：把语言切换放到菜单底部 -->
+				  <li class="d-lg-none mt-2 px-3">
+					<div class="lang-switch d-flex gap-2">
+					  <button type="button" class="btn-lang" data-set-lang="zh">中</button>
+					  <button type="button" class="btn-lang" data-set-lang="en">EN</button>
+					</div>
+				  </li>
+				</ul>
+			  </div><!-- /.header-nav -->
+	  
+			  <!-- 桌面端：最右侧语言切换 -->
+			  <div class="dropdown d-none d-lg-block ms-3">
+				<button class="btn btn-md btn-outline-light dropdown-toggle"
+						type="button" id="langDropdown"
+						data-bs-toggle="dropdown" aria-expanded="false">
+				  <span id="langLabel" style="font-size: 14px; font-weight: bold;">中文</span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+				  <li><a class="dropdown-item" href="#" data-set-lang="zh">中文</a></li>
+				  <li><a class="dropdown-item" href="#" data-set-lang="en">English</a></li>
+				</ul>
+			  </div>
 			</div>
 		</div>
 	</header>
+	  
     <!-- header END -->
 
     <!-- Content -->
@@ -487,96 +515,117 @@
 
 				<!-- Our Services -->
 				 <!-- service 1 -->
-				 <div class="section-full bg-blue-dark content-inner"  style="background-image: url(images/background/14.png); background-position: top right; background-repeat: no-repeat; background-size: 800px 800px; position: relative;">
-					<div class="container">
-						<div class="section-head text-center">
-							<h2 class="title text-white">核心业务</h2>
-							<p class="custom-paragraph text-white" style="font-size: larger; text-align: center; font-weight: 400; line-height: 1.8;">为科研提速 为创新护航</p>
+				 <div class="section-full bg-blue-dark content-inner"
+					style="background-image: url(images/background/14.png); background-position: top right; background-repeat: no-repeat; background-size: 800px 800px; position: relative;">
+				<div class="container">
+					<div class="section-head text-center">
+					<h2 class="title text-white" data-i18n="services.title">核心业务</h2>
+					<p class="custom-paragraph text-white"
+						style="font-size: larger; text-align: center; font-weight: 400; line-height: 1.8;"
+						data-i18n="services.subtitle">为科研提速 为创新护航</p>
+					</div>
+
+					<div class="section-content row">
+					<!-- 0 政府采购服务 -->
+					<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+						<div class="icon-bx-wraper" data-name="01">
+						<div class="icon-lg">
+							<a href="javascript:void(0);" class="icon-cell" aria-label="Government Procurement">
+							<i class="bi bi-briefcase" aria-hidden="true"></i>
+							</a>
 						</div>
-						<div class="section-content row">
-							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-								<div class="icon-bx-wraper" data-name="01">
-									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-briefcase"></i></a>
-									</div>
-									<div class="icon-content">
-										<h2 class="dlab-tilte">政府采购服务</h2>
-										<ul class="list-circle">
-											<li class="list-text custom-paragraph" >一站式科研采购</li>
-											<li class="list-text custom-paragraph" >进出口税务咨询</li>
-											<li class="list-text custom-paragraph" >减免税、退税代办</li>
-											<li class="list-text custom-paragraph" >进出口代理服务</li>
-											<li class="list-text custom-paragraph" >深港及国际综合物流服务</li>
-											<li class="list-text custom-paragraph" >产品采购及供应链管理</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-								<div class="icon-bx-wraper" data-name="02">
-									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-eyedropper"></i></a>
-									</div>
-									<div class="icon-content">
-										<h2 class="dlab-tilte">生物耗材供应</h2>
-										<ul class="list-angle-right">
-											<li class="list-text custom-paragraph" >胎牛血清</li>
-											<li class="list-text custom-paragraph" >其他动物血清</li>
-											<li class="list-text custom-paragraph" >血清替代物</li>
-											<li class="list-text custom-paragraph" >牛血清蛋白</li>
-											<li class="list-text custom-paragraph" >无血清培养基</li>
-											<li class="list-text custom-paragraph" >Lipogro®牛浓缩胆固醇</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-								<div class="icon-bx-wraper" data-name="03">
-									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-hospital"></i></a>
-									</div>
-									<div class="icon-content">
-										<h2 class="dlab-tilte">扫描检测服务</h2>
-										<ul class="list-icon-box primary">
-											<li class="list-text custom-paragraph" >小动物骨骼扫描</li>
-											<li class="list-text custom-paragraph" >牙齿及牙周组织扫描</li>
-											<li class="list-text custom-paragraph" >软组织扫描</li>
-											<li class="list-text custom-paragraph" >肿瘤扫描</li>
-											<li class="list-text custom-paragraph" >疾病机制研究分析服务</li>
-											<li class="list-text custom-paragraph" >生物材料扫描</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-								<div class="icon-bx-wraper" data-name="04">
-									<div class="icon-lg">
-										<a href="javascript:void(0);" class="icon-cell"><i class="bi bi-book"></i></a>
-									</div>
-									<div class="icon-content">
-										<h2 class="dlab-tilte">政采培训服务</h2>
-										<ul class="list-hand-point green">
-											<li class="list-text custom-paragraph" >政策理论分析</li>
-											<li class="list-text custom-paragraph" >实务技能学习</li>
-											<li class="list-text custom-paragraph" >技术产品操作</li>
-											<li class="list-text custom-paragraph" >实操案例分析</li>
-											<li class="list-text custom-paragraph" >疑难问题解析</li>
-											<li class="list-text custom-paragraph" >模拟考场</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							
+						<div class="icon-content">
+							<h2 class="dlab-tilte" data-i18n="services.items.0.title">政府采购服务</h2>
+							<ul class="list-circle">
+							<li class="list-text custom-paragraph" data-i18n="services.items.0.list.0">一站式科研采购</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.0.list.1">进出口税务咨询</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.0.list.2">减免税、退税代办</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.0.list.3">进出口代理服务</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.0.list.4">深港及国际综合物流服务</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.0.list.5">产品采购及供应链管理</li>
+							</ul>
+						</div>
 						</div>
 					</div>
+
+					<!-- 1 生物耗材供应 -->
+					<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+						<div class="icon-bx-wraper" data-name="02">
+						<div class="icon-lg">
+							<a href="javascript:void(0);" class="icon-cell" aria-label="Biomedical Consumables">
+							<i class="bi bi-eyedropper" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="icon-content">
+							<h2 class="dlab-tilte" data-i18n="services.items.1.title">生物耗材供应</h2>
+							<ul class="list-angle-right">
+							<li class="list-text custom-paragraph" data-i18n="services.items.1.list.0">胎牛血清</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.1.list.1">其他动物血清</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.1.list.2">血清替代物</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.1.list.3">牛血清蛋白</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.1.list.4">无血清培养基</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.1.list.5">Lipogro®牛浓缩胆固醇</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+
+					<!-- 2 扫描检测服务 -->
+					<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+						<div class="icon-bx-wraper" data-name="03">
+						<div class="icon-lg">
+							<a href="javascript:void(0);" class="icon-cell" aria-label="Scanning & Testing">
+							<i class="bi bi-hospital" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="icon-content">
+							<h2 class="dlab-tilte" data-i18n="services.items.2.title">扫描检测服务</h2>
+							<ul class="list-icon-box primary">
+							<li class="list-text custom-paragraph" data-i18n="services.items.2.list.0">小动物骨骼扫描</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.2.list.1">牙齿及牙周组织扫描</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.2.list.2">软组织扫描</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.2.list.3">肿瘤扫描</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.2.list.4">疾病机制研究分析服务</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.2.list.5">生物材料扫描</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+
+					<!-- 3 政采培训服务 -->
+					<div class="col-md-6 col-lg-6 col-sm-12 service-box style3 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+						<div class="icon-bx-wraper" data-name="04">
+						<div class="icon-lg">
+							<a href="javascript:void(0);" class="icon-cell" aria-label="Procurement Training">
+							<i class="bi bi-book" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="icon-content">
+							<h2 class="dlab-tilte" data-i18n="services.items.3.title">政采培训服务</h2>
+							<ul class="list-hand-point green">
+							<li class="list-text custom-paragraph" data-i18n="services.items.3.list.0">政策理论分析</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.3.list.1">实务技能学习</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.3.list.2">技术产品操作</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.3.list.3">实操案例分析</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.3.list.4">疑难问题解析</li>
+							<li class="list-text custom-paragraph" data-i18n="services.items.3.list.5">模拟考场</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+
+					</div><!-- /.section-content -->
 				</div>
+				</div>
+
+			
 
 				<!-- Client logo Carousel START -->
 				<div class="section-full bg-white content-inner">
 					<div class="container">
 						<div class="section-head text-center text-black">
-							<h2 class="title">服务客户</h2>
-							<p class="custom-paragraph" style="font-size: larger; text-align: center; font-weight: 400; line-height: 1.8;">诚信靠谱，客户为主，卓越超群，合作共赢</p>
+							<h2 data-i18n="customers.title" class="title">服务客户</h2>
+							<p data-i18n="customers.subtitle" class="custom-paragraph" style="font-size: larger; text-align: center; font-weight: 400; line-height: 1.8;">诚信靠谱，客户为主，卓越超群，合作共赢</p>
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
@@ -935,36 +984,163 @@
  
 
 <script>
+	(async function(){
+	  const footer = document.getElementById('footer');
+	  if(!footer) return;
+	  const res = await fetch('components/footer.html', { cache: 'no-store' });
+	  const html = await res.text();
+	  footer.innerHTML = html;
+  
+	  // ✅ 按当前语言，立即对 footer 子树做一次翻译
+	  if (window.i18n && typeof window.i18n.translateSubtree === 'function') {
+		window.i18n.translateSubtree(footer);
+	  }
+  
+	  // ✅ 监听全站语言切换事件，只重翻 footer
+	  document.addEventListener('langchange', ()=> {
+		window.i18n.translateSubtree(footer);
+	  });
+	})();
+  </script>
+
+<script>
+	(function(){
+	  function get(obj, path){
+		return path.split('.').reduce((o,k)=> (o==null?undefined:o[k]), obj);
+	  }
+	  function debugFooterMissing(){
+		const root = document.getElementById('footer') || document.querySelector('footer.site-footer');
+		if (!root || !window.i18n || !i18n.dicts) return;
+		const {site, data} = i18n.dicts;
+		const miss = [];
+		root.querySelectorAll('[data-i18n],[data-i18n-html]').forEach(el=>{
+		  const key = el.getAttribute('data-i18n-html') || el.getAttribute('data-i18n');
+		  const val = get(data, key) ?? get(site, key);
+		  if (val == null) {
+			el.style.outline = '2px solid #ff4d4f';
+			miss.push(key);
+		  }
+		});
+		if (miss.length) {
+		  console.warn('[i18n] Missing footer keys:', Array.from(new Set(miss)));
+		} else {
+		  console.log('[i18n] Footer OK: all keys resolved.');
+		}
+	  }
+	  // 初次与切换时都检查
+	  document.addEventListener('DOMContentLoaded', debugFooterMissing);
+	  document.addEventListener('langchange', debugFooterMissing);
+	})();
+	</script>
+	
+
+<script>
 	(function () {
-	  function getLang(){const s=localStorage.getItem('lang'); if(s) return s; const n=(navigator.language||'zh').toLowerCase(); return n.startsWith('zh')?'zh':'en'}
-	  function setLang(l){localStorage.setItem('lang',l); location.reload()}
-	  window.__setLang = setLang;
-	
-	  function get(obj, path){return path.split('.').reduce((o,k)=>o && o[k]!=null ? o[k] : undefined, obj)}
-	  async function loadJSON(p){const r=await fetch(p+(/\?/.test(p)?'&':'?')+'v='+Date.now()); if(!r.ok) throw new Error(p); return r.json()}
-	
-	  (async function(){
-		const lang = getLang();
-		// 首页固定读取 home.*.json
-		const [site, data] = await Promise.all([
-		  loadJSON('/content/site.json').catch(()=>({})),
-		  loadJSON(`/content/index.${lang}.json`).catch(()=>({}))
-		]);
-	
-		// 纯文本占位
-		document.querySelectorAll('[data-i18n]').forEach(el=>{
+	  function getLang(){
+		const s = localStorage.getItem('lang');
+		if (s) return s;
+		const n = (navigator.language||'zh').toLowerCase();
+		return n.startsWith('zh') ? 'zh' : 'en';
+	  }
+	  async function loadJSON(p){
+		const r = await fetch(p + (/\?/.test(p)?'&':'?') + 'v=' + Date.now());
+		if (!r.ok) throw new Error('Load failed: ' + p);
+		return r.json();
+	  }
+	  // 安全取值（支持 a.b.c 与数组下标 a.b.0.c）
+	  function get(obj, path){
+		return path.split('.').reduce((o,k)=>{
+		  if(o==null) return undefined;
+		  return o[k];
+		}, obj);
+	  }
+	  // 翻译某个子树：支持 data-i18n 与 data-i18n-html
+	  function translateSubtree(root, dicts){
+		const { site, data } = dicts;
+		root.querySelectorAll('[data-i18n]').forEach(el=>{
 		  const key = el.getAttribute('data-i18n');
 		  const val = get(data, key) ?? get(site, key);
 		  if (val != null) el.textContent = val;
 		});
-	
-		// 允许 HTML（用于 <br/> 的标题）
-		document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+		root.querySelectorAll('[data-i18n-html]').forEach(el=>{
 		  const key = el.getAttribute('data-i18n-html');
 		  const val = get(data, key) ?? get(site, key);
-		  if (val != null) el.innerHTML = val;
+		  if (val != null) el.innerHTML = val;  // 仅用于可信字典（如地址里的 <br/>）
 		});
-	  })().catch(console.error);
+		// 翻译属性的场景（如 alt / title / placeholder）
+		root.querySelectorAll('[data-i18n-attr]').forEach(el=>{
+		  const key = el.getAttribute('data-i18n');
+		  if(!key) return;
+		  const val = get(data, key) ?? get(site, key);
+		  if (val == null) return;
+		  const attrs = el.getAttribute('data-i18n-attr').split('|');
+		  attrs.forEach(a => el.setAttribute(a.trim(), val));
+		});
+	  }
+	
+	  async function loadDicts(lang){
+		const [site, data] = await Promise.all([
+		//   loadJSON('/content/site.json').catch(()=>({})),
+		  loadJSON(`/content/index.${lang}.json`).catch(()=>({})),
+		  loadJSON(`/content/footer.${lang}.json`).catch(()=>({})),
+		]);
+		return { site, data, lang };
+	  }
+	
+	  // ---- 导出全局 i18n（无刷新切换）----
+	  const i18n = {
+		lang: getLang(),
+		dicts: { site:{}, data:{} },
+		async init(){
+		  this.dicts = await loadDicts(this.lang);
+		  translateSubtree(document, this.dicts); // 首次全页翻译
+		},
+		async setLang(lang){
+		  this.lang = lang;
+		  localStorage.setItem('lang', lang);
+		  this.dicts = await loadDicts(lang);
+		  translateSubtree(document, this.dicts); // 无刷新整页翻译
+		  document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
+		},
+		translateSubtree(root){ translateSubtree(root, this.dicts); }
+	  };
+	  window.i18n = i18n;          // 给第2段脚本使用
+	  window.__setLang = (l)=>i18n.setLang(l); // 兼容你之前的 __setLang
+	
+	  // 初始化
+	  i18n.init().catch(console.error);
+	})();
+	</script>
+
+<script>
+	(function(){
+	  function currentLang(){
+		const s = localStorage.getItem('lang');
+		if (s) return s;
+		const n = (navigator.language || 'zh').toLowerCase();
+		return n.startsWith('zh') ? 'zh' : 'en';
+	  }
+	  function setLabel(){
+		const cur = currentLang();
+		const el = document.getElementById('langLabel');
+		if (el) el.textContent = (cur === 'zh' ? '中文' : 'EN');
+	  }
+	  function switchLang(lang){
+		if (window.i18n && typeof window.i18n.setLang === 'function'){
+		  window.i18n.setLang(lang);   // 无刷新切换
+		  setLabel();
+		}else{
+		  localStorage.setItem('lang', lang);
+		  location.reload();           // 未集成 i18n 则刷新
+		}
+	  }
+	  document.querySelectorAll('.dropdown-item[data-set-lang]').forEach(a=>{
+		a.addEventListener('click', (e)=>{
+		  e.preventDefault();
+		  switchLang(a.getAttribute('data-set-lang'));
+		});
+	  });
+	  setLabel();
 	})();
 	</script>
 
@@ -1091,16 +1267,7 @@ jQuery(document).ready(function() {
 
 
 
-<script>
-	const footer = document.getElementById('footer');
 
-	
-	fetch('components/footer.html')
-		.then(response => response.text())
-		.then(data => {
-			footer.innerHTML = data;
-		});
-</script>
 
 <script>
 	window.addEventListener('load', () => {

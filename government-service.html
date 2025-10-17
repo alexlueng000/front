@@ -29,6 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-2.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
 	
 	<!-- Google Font -->
 	<style>
@@ -63,44 +64,70 @@
 	<!-- header（静态保留，避免异步空节点） -->
 	<header class="site-header mo-left header navstyle1">
 		<div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
-			<div class="main-bar clearfix bg-primary">
-				<div class="container clearfix">
-					<a href="index.html">
-						<div class="logo-header mostion logo-dark" style="min-height: 80px;">
-							<img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;" alt="Desktop Logo" class="logo-desktop">
-							<img src="images/logo_mobile.png" alt="Mobile Logo" class="logo-mobile">
-						</div>
-					</a>
-					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span><span></span><span></span>
-					</button>
-
-					<div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown" style="min-height: 80px;">
-						<div class="logo-header d-md-block d-lg-none">
-							<a href="index.html" style="cursor: pointer;"><img src="images/logo_frtier.png" alt=""></a>
-						</div>
-						<ul class="nav navbar-nav">
-							<li style="margin-right: 30px;"><a href="index.html" data-i18n="nav.home">首页</a></li>
-							<li style="margin-right: 30px;"><a href="government-service.html" data-i18n="nav.government">公共采购服务</a></li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;" data-i18n="nav.biomed">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu right">
-									<li><a href="https://www.frtbio.com" target="_blank" data-i18n="nav.biomed_consumables">生物耗材</a></li>
-									<li><a href="https://szfront.cn" target="_blank" data-i18n="nav.biomed_scanning">扫描检测</a></li>
-								</ul>
-							</li>
-							<li style="margin-right: 30px;"><a href="javascript:;" data-i18n="nav.academy">采购通学院</a></li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;" data-i18n="nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu right">
-									<li><a href="introduction.html" data-i18n="nav.intro">公司简介</a></li>
-									<li><a href="customers.html" data-i18n="nav.customers">服务客户</a></li>
-									<li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
-								</ul>
-							</li>
-						</ul>	
-					</div>
+		  <div class="main-bar clearfix bg-primary">
+			<!-- 给 container 加上 d-flex 对齐 -->
+			<div class="container clearfix d-flex align-items-center">
+			  <a href="index.html" class="me-3">
+				<div class="logo-header mostion logo-dark" style="min-height: 80px;">
+				  <img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;" alt="Desktop Logo" class="logo-desktop">
+				  <img src="images/logo_new.webp" alt="Mobile Logo" class="logo-mobile">
 				</div>
+			  </a>
+	  
+			  <button class="navbar-toggler collapsed navicon ms-auto d-lg-none" type="button"
+					  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			  </button>
+	  
+			  <!-- 菜单：占据中间，左右可放东西 -->
+			  <div class="header-nav navbar-collapse collapse justify-content-center flex-grow-1"
+				   id="navbarNavDropdown" style="min-height: 80px;">
+				<div class="logo-header d-md-block d-lg-none">
+				  <a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li class="active" style="margin-right: 30px;"><a href="index.html" data-i18n="nav.home">首页</a></li>
+				  <li style="margin-right: 30px;"><a href="government-service.html" data-i18n="nav.government">公共采购服务</a></li>
+				  <li style="margin-right: 30px;">
+					<a href="javascript:;" data-i18n="nav.biomed">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+					<ul class="sub-menu right">
+					  <li><a href="https://www.frontbiomedical.com/" target="_blank" data-i18n="nav.biomed_consumables">生物耗材</a></li>
+					  <li><a href="https://szfront.cn" target="_blank" data-i18n="nav.biomed_scanning">扫描检测</a></li>
+					</ul>
+				  </li>
+				  <li style="margin-right: 30px;"><a href="javascript:;" data-i18n="nav.academy">采购通学院</a></li>
+				  <li style="margin-right: 30px;">
+					<a href="javascript:;" data-i18n="nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
+					<ul class="sub-menu right">
+					  <li><a href="introduction.html" data-i18n="nav.intro">公司简介</a></li>
+					  <li><a href="customers.html" data-i18n="nav.customers">服务客户</a></li>
+					  <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+					</ul>
+				  </li>
+	  
+				  <!-- 移动端：把语言切换放到菜单底部 -->
+				  <li class="d-lg-none mt-2 px-3">
+					<div class="lang-switch d-flex gap-2">
+					  <button type="button" class="btn-lang" data-set-lang="zh">中</button>
+					  <button type="button" class="btn-lang" data-set-lang="en">EN</button>
+					</div>
+				  </li>
+				</ul>
+			  </div><!-- /.header-nav -->
+	  
+			  <!-- 桌面端：最右侧语言切换 -->
+			  <div class="dropdown d-none d-lg-block ms-3">
+				<button class="btn btn-md btn-outline-light dropdown-toggle"
+						type="button" id="langDropdown"
+						data-bs-toggle="dropdown" aria-expanded="false">
+				  <span id="langLabel" style="font-size: 14px; font-weight: bold;">中文</span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+				  <li><a class="dropdown-item" href="#" data-set-lang="zh">中文</a></li>
+				  <li><a class="dropdown-item" href="#" data-set-lang="en">English</a></li>
+				</ul>
+			  </div>
 			</div>
 		</div>
 	</header>
@@ -253,37 +280,164 @@ jQuery(document).ready(function() {
 
 <!-- i18n 加载（与首页/介绍页保持一致） -->
 <script>
-(function () {
-  function getLang(){const s=localStorage.getItem('lang'); if(s) return s; const n=(navigator.language||'zh').toLowerCase(); return n.startsWith('zh')?'zh':'en'}
-  function get(obj, path){return path.split('.').reduce((o,k)=>o && o[k]!=null ? o[k] : undefined, obj)}
-  async function loadJSON(p){const r=await fetch(p+(/\?/.test(p)?'&':'?')+'v='+Date.now()); if(!r.ok) throw new Error(p); return r.json()}
-  (async function(){
-	const lang = getLang();
-	const [site, data] = await Promise.all([
-	  loadJSON('/content/site.json').catch(()=>({})),
-	  loadJSON(`/content/government-service.${lang}.json`).catch(()=>({}))
-	]);
-	document.querySelectorAll('[data-i18n]').forEach(el=>{
-	  const key = el.getAttribute('data-i18n');
-	  const val = get(data, key) ?? get(site, key);
-	  if (val != null) el.textContent = val;
-	});
-	document.querySelectorAll('[data-i18n-html]').forEach(el=>{
-	  const key = el.getAttribute('data-i18n-html');
-	  const val = get(data, key) ?? get(site, key);
-	  if (val != null) el.innerHTML = val;
-	});
-  })().catch(console.error);
-})();
-</script>
+	(async function(){
+	  const footer = document.getElementById('footer');
+	  if(!footer) return;
+	  const res = await fetch('components/footer.html', { cache: 'no-store' });
+	  const html = await res.text();
+	  footer.innerHTML = html;
+  
+	  // ✅ 按当前语言，立即对 footer 子树做一次翻译
+	  if (window.i18n && typeof window.i18n.translateSubtree === 'function') {
+		window.i18n.translateSubtree(footer);
+	  }
+  
+	  // ✅ 监听全站语言切换事件，只重翻 footer
+	  document.addEventListener('langchange', ()=> {
+		window.i18n.translateSubtree(footer);
+	  });
+	})();
+  </script>
 
-<!-- Footer 片段加载 -->
 <script>
-  const footer = document.getElementById('footer');
-  fetch('components/footer.html')
-	.then(r => r.text())
-	.then(html => { footer.innerHTML = html; })
-	.catch(console.error);
-</script>
+	(function(){
+	  function get(obj, path){
+		return path.split('.').reduce((o,k)=> (o==null?undefined:o[k]), obj);
+	  }
+	  function debugFooterMissing(){
+		const root = document.getElementById('footer') || document.querySelector('footer.site-footer');
+		if (!root || !window.i18n || !i18n.dicts) return;
+		const {site, data} = i18n.dicts;
+		const miss = [];
+		root.querySelectorAll('[data-i18n],[data-i18n-html]').forEach(el=>{
+		  const key = el.getAttribute('data-i18n-html') || el.getAttribute('data-i18n');
+		  const val = get(data, key) ?? get(site, key);
+		  if (val == null) {
+			el.style.outline = '2px solid #ff4d4f';
+			miss.push(key);
+		  }
+		});
+		if (miss.length) {
+		  console.warn('[i18n] Missing footer keys:', Array.from(new Set(miss)));
+		} else {
+		  console.log('[i18n] Footer OK: all keys resolved.');
+		}
+	  }
+	  // 初次与切换时都检查
+	  document.addEventListener('DOMContentLoaded', debugFooterMissing);
+	  document.addEventListener('langchange', debugFooterMissing);
+	})();
+	</script>
+	
+
+<script>
+	(function () {
+	  function getLang(){
+		const s = localStorage.getItem('lang');
+		if (s) return s;
+		const n = (navigator.language||'zh').toLowerCase();
+		return n.startsWith('zh') ? 'zh' : 'en';
+	  }
+	  async function loadJSON(p){
+		const r = await fetch(p + (/\?/.test(p)?'&':'?') + 'v=' + Date.now());
+		if (!r.ok) throw new Error('Load failed: ' + p);
+		return r.json();
+	  }
+	  // 安全取值（支持 a.b.c 与数组下标 a.b.0.c）
+	  function get(obj, path){
+		return path.split('.').reduce((o,k)=>{
+		  if(o==null) return undefined;
+		  return o[k];
+		}, obj);
+	  }
+	  // 翻译某个子树：支持 data-i18n 与 data-i18n-html
+	  function translateSubtree(root, dicts){
+		const { site, data } = dicts;
+		root.querySelectorAll('[data-i18n]').forEach(el=>{
+		  const key = el.getAttribute('data-i18n');
+		  const val = get(data, key) ?? get(site, key);
+		  if (val != null) el.textContent = val;
+		});
+		root.querySelectorAll('[data-i18n-html]').forEach(el=>{
+		  const key = el.getAttribute('data-i18n-html');
+		  const val = get(data, key) ?? get(site, key);
+		  if (val != null) el.innerHTML = val;  // 仅用于可信字典（如地址里的 <br/>）
+		});
+		// 翻译属性的场景（如 alt / title / placeholder）
+		root.querySelectorAll('[data-i18n-attr]').forEach(el=>{
+		  const key = el.getAttribute('data-i18n');
+		  if(!key) return;
+		  const val = get(data, key) ?? get(site, key);
+		  if (val == null) return;
+		  const attrs = el.getAttribute('data-i18n-attr').split('|');
+		  attrs.forEach(a => el.setAttribute(a.trim(), val));
+		});
+	  }
+	
+	  async function loadDicts(lang){
+		const [site, data] = await Promise.all([
+		//   loadJSON('/content/site.json').catch(()=>({})),
+		  loadJSON(`/content/government-service.${lang}.json`).catch(()=>({})),
+		  loadJSON(`/content/footer.${lang}.json`).catch(()=>({})),
+		]);
+		return { site, data, lang };
+	  }
+	
+	  // ---- 导出全局 i18n（无刷新切换）----
+	  const i18n = {
+		lang: getLang(),
+		dicts: { site:{}, data:{} },
+		async init(){
+		  this.dicts = await loadDicts(this.lang);
+		  translateSubtree(document, this.dicts); // 首次全页翻译
+		},
+		async setLang(lang){
+		  this.lang = lang;
+		  localStorage.setItem('lang', lang);
+		  this.dicts = await loadDicts(lang);
+		  translateSubtree(document, this.dicts); // 无刷新整页翻译
+		  document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
+		},
+		translateSubtree(root){ translateSubtree(root, this.dicts); }
+	  };
+	  window.i18n = i18n;          // 给第2段脚本使用
+	  window.__setLang = (l)=>i18n.setLang(l); // 兼容你之前的 __setLang
+	
+	  // 初始化
+	  i18n.init().catch(console.error);
+	})();
+	</script>
+
+<script>
+	(function(){
+	  function currentLang(){
+		const s = localStorage.getItem('lang');
+		if (s) return s;
+		const n = (navigator.language || 'zh').toLowerCase();
+		return n.startsWith('zh') ? 'zh' : 'en';
+	  }
+	  function setLabel(){
+		const cur = currentLang();
+		const el = document.getElementById('langLabel');
+		if (el) el.textContent = (cur === 'zh' ? '中文' : 'EN');
+	  }
+	  function switchLang(lang){
+		if (window.i18n && typeof window.i18n.setLang === 'function'){
+		  window.i18n.setLang(lang);   // 无刷新切换
+		  setLabel();
+		}else{
+		  localStorage.setItem('lang', lang);
+		  location.reload();           // 未集成 i18n 则刷新
+		}
+	  }
+	  document.querySelectorAll('.dropdown-item[data-set-lang]').forEach(a=>{
+		a.addEventListener('click', (e)=>{
+		  e.preventDefault();
+		  switchLang(a.getAttribute('data-set-lang'));
+		});
+	  });
+	  setLabel();
+	})();
+	</script>
 </body>
 </html>

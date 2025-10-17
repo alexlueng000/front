@@ -1,0 +1,42 @@
+
+/* 仅英文时的全局微调 */
+html[lang="en"] .nav.navbar-nav > li > a {
+    font-size: 14px;           /* 字体更小些 */
+    padding: 0 10px;           /* 左右留白收紧 */
+  }
+  html[lang="en"] .nav.navbar-nav > li { 
+    margin-right: 16px !important;  /* 原来 30px 太宽 */
+  }
+  
+  /* 导航允许换行，防止挤爆 */
+  @media (max-width: 1400px) {
+    html[lang="en"] .header-nav .navbar-nav {
+      flex-wrap: wrap;         /* 必要时二行，避免溢出 */
+      gap: 6px 12px;
+    }
+  }
+  
+  /* Hero 标题用 clamp 自适应缩放 */
+  html[lang="en"] .hero-title,      /* 给你的 h1 加这个类或替换为实际选择器 */
+  html[lang="en"] .tp-caption h1 {
+    font-size: clamp(24px, 4vw, 44px);
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    max-width: 780px;          /* 限宽，避免一行太长 */
+  }
+  html[lang="en"] .hero-subtitle,    /* h2/subtitle */
+  html[lang="en"] .tp-caption h2 {
+    font-size: clamp(16px, 2.5vw, 28px);
+    line-height: 1.25;
+    max-width: 700px;
+  }
+  
+  /* 长词断行策略，避免“超长单词/URL”撑开 */
+  html[lang="en"] .header-nav a,
+  html[lang="en"] .tp-caption,
+  html[lang="en"] [data-i18n],
+  html[lang="en"] [data-i18n-html] {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }

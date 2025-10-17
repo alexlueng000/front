@@ -1,0 +1,42 @@
+{
+    "footer": {
+      "tagline": "Accelerating Research, Safeguarding Innovation",
+      "about": {
+        "desc": "We provide one-stop services for universities, hospitals, research institutes, and enterprise R&D centers—from advanced lab equipment and consumables to technical consulting, international trade, tax reduction, and public procurement."
+      },
+      "services": {
+        "title": "Core Services",
+        "items": ["Public Procurement","Biomedical Consumables","Scanning & Testing","Procurement Training"]
+      },
+      "contact": {
+        "title": "Contact Us",
+        "address": {
+          "label": "Address",
+          "value": "Xin'nan Community, Nanhu Subdistrict, Luohu, Shenzhen<br/>Room 1301, Hongchang Plaza, 2001 Shennan East Rd"
+        },
+        "phone": { "label": "Phone", "value": "+86 755-8223 3228" },
+        "email": { "label": "Email", "value": "front903@163.com" }
+      },
+      "follow": {
+        "title": "Follow Us",
+        "ilab": "ilab Official Account",
+        "bio": "Bio Official Account",
+        "ct": "CT Official Account",
+        "cs": "WeChat Support",
+        "ilabAlt": "ilab Science",
+        "bioAlt": "Fraun Biomed",
+        "ctAlt": "SCANCO CT Service Center",
+        "csAlt": "Fraun WeChat Support"
+      },
+      "company": { "name": "Fraun Technology" },
+      "copyright": {
+        "prefix": "Copyright ©",
+        "suffix": "All rights reserved."
+      },
+      "icp": {
+        "iconAlt": "ICP icon",
+        "text": "ICP: Guangdong 2025400120-1"
+      }
+    }
+  }
+  

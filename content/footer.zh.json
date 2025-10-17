@@ -1,0 +1,42 @@
+{
+    "footer": {
+      "tagline": "为科研提速 为创新护航",
+      "about": {
+        "desc": "为全国范围内的科研院所、高等院校、医疗机构以及大型企业研发中心等大型企事业单位，提供从实验室设备、耗材等先进产品的引进，到技术咨询、国际贸易、减免关税、政府采购等一站式综合性服务。"
+      },
+      "services": {
+        "title": "核心业务",
+        "items": ["公共采购服务","生物耗材供应","扫描检测服务","政采培训服务"]
+      },
+      "contact": {
+        "title": "联系我们",
+        "address": {
+          "label": "公司地址",
+          "value": "深圳市罗湖区南湖街道新南社区<br/>深南东路2001号鸿昌广场1301"
+        },
+        "phone": { "label": "联系电话", "value": "0755-82233228" },
+        "email": { "label": "电子邮件", "value": "front903@163.com" }
+      },
+      "follow": {
+        "title": "关注我们",
+        "ilab": "ilab公众号",
+        "bio": "生物公众号",
+        "ct": "ct公众号",
+        "cs": "微信客服",
+        "ilabAlt": "ilab爱科研",
+        "bioAlt": "弗劳恩生物",
+        "ctAlt": "SCANCO CT服务中心",
+        "csAlt": "弗劳恩微信客服"
+      },
+      "company": { "name": "弗劳恩科技" },
+      "copyright": {
+        "prefix": "Copyright ©",
+        "suffix": "all rights reserved."
+      },
+      "icp": {
+        "iconAlt": "备案图标",
+        "text": "粤ICP备2025400120号-1"
+      }
+    }
+  }
+  

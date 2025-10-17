@@ -1,0 +1,48 @@
+{
+    "page": {
+      "title": "Fraun Technology - Public Procurement Services"
+    },
+    "nav": {
+      "home": "Home",
+      "government": "Public Procurement",
+      "biomed": "Biomedical Research",
+      "biomed_consumables": "Consumables",
+      "biomed_scanning": "Scanning & Testing",
+      "academy": "Procurement Academy",
+      "about": "About Us",
+      "intro": "Company Profile",
+      "customers": "Clients",
+      "contact": "Contact Us"
+    },
+    "hero": {
+      "title": "Public Procurement Services",
+      "desc": "Our procurement center brings together expert teams with deep experience in scientific, educational, medical, and industrial sectors. We serve institutions nationwide with trusted supply-chain solutions and long-term partnerships. By 2024, total transaction volume exceeded RMB 35 billion.",
+      "cta": "Learn More"
+    },
+    "cta": {
+      "contact": "Contact Us"
+    },
+    "services": [
+      {
+        "title": "One-stop<br>Research Procurement",
+        "desc": "End-to-end procurement solutions from needs assessment to delivery—simplifying workflows, saving time and cost, and ensuring quality and compliance. Coverage includes reagents, consumables, instruments, software, and consulting."
+      },
+      {
+        "title": "Import & Export<br>Tax Consulting",
+        "desc": "Professional tax planning and optimization for cross-border trade, including VAT and duty refunds, helping clients reduce burdens, manage risks, and improve capital efficiency."
+      },
+      {
+        "title": "Tax Reduction &<br>Refund Agency",
+        "desc": "Assistance with tax reduction and refund applications—policy review, qualification check, documentation, and submission—to minimize cost and accelerate cash flow."
+      },
+      {
+        "title": "Import & Export<br>Agency Services",
+        "desc": "Comprehensive import/export services: purchasing, transport, customs, warehousing, logistics, and compliance management—reducing risks and improving operational efficiency."
+      },
+      {
+        "title": "Procurement &<br>Supply Chain Management",
+        "desc": "Integrated management of sourcing, supplier negotiation, order and inventory control, and logistics—to ensure timely, accurate, and quality delivery of research materials."
+      }
+    ]
+  }
+  

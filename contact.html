@@ -47,65 +47,74 @@
 
     <!-- header -->
     <header class="site-header mo-left header navstyle1">
-		<!-- main header -->
-        <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
-            <div class="main-bar clearfix bg-primary">
-                <div class="container clearfix">
-                    <!-- website logo -->
-                    <a href="index.html">
-						<div class="logo-header mostion logo-dark" style="min-height: 80px;">
-							<img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;"  alt="Desktop Logo" class="logo-desktop" >
-							<img src="images/logo_new.webp" alt="Mobile Logo" class="logo-mobile">
-						</div>
-					</a>
-                    <!-- nav toggle button -->
-                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-
-                    <!-- main nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown"  style="min-height: 80px;">
-						<div class="logo-header d-md-block d-lg-none">
-							<a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
-						</div>
-                        <ul class="nav navbar-nav">	
-							<li style="margin-right: 30px;">
-								<a href="index.html">首页</a>
-							</li>
-
-
-							<li style="margin-right: 30px;">
-								<a href="government-service.html">公共采购服务</a>
-							</li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu right">
-									<li><a href="https://www.frtbio.com" target="_blank">生物耗材</a></li>
-                                	<li><a href="https://szfront.cn" target="_blank">扫描检测</a></li>
-								</ul>
-							</li>
-							<li style="margin-right: 30px;">
-								<a href="javascript:;">采购通学院</a>
-								
-							</li>
-							<li class="active" style="margin-right: 30px;">
-								<a href="javascript:;">关于我们<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu right">
-									<li><a href="introduction.html">公司简介</a></li>
-									<li><a href="customers.html">服务客户</a></li>
-									<li><a href="contact.html">联系我们</a></li>
-								</ul>
-							</li>
-						</ul>	
-							
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- main header END -->
-    </header>
+		<div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+		  <div class="main-bar clearfix bg-primary">
+			<!-- 给 container 加上 d-flex 对齐 -->
+			<div class="container clearfix d-flex align-items-center">
+			  <a href="index.html" class="me-3">
+				<div class="logo-header mostion logo-dark" style="min-height: 80px;">
+				  <img src="images/logo_new.webp" style="scale: 2.0; padding-right: 20px; padding-top: 4px;" alt="Desktop Logo" class="logo-desktop">
+				  <img src="images/logo_new.webp" alt="Mobile Logo" class="logo-mobile">
+				</div>
+			  </a>
+	  
+			  <button class="navbar-toggler collapsed navicon ms-auto d-lg-none" type="button"
+					  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			  </button>
+	  
+			  <!-- 菜单：占据中间，左右可放东西 -->
+			  <div class="header-nav navbar-collapse collapse justify-content-center flex-grow-1"
+				   id="navbarNavDropdown" style="min-height: 80px;">
+				<div class="logo-header d-md-block d-lg-none">
+				  <a href="index.html"><img src="images/logo_frtier.png" alt=""></a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li class="active" style="margin-right: 30px;"><a href="index.html" data-i18n="nav.home">首页</a></li>
+				  <li style="margin-right: 30px;"><a href="government-service.html" data-i18n="nav.government">公共采购服务</a></li>
+				  <li style="margin-right: 30px;">
+					<a href="javascript:;" data-i18n="nav.biomed">生物医学研究服务<i class="fas fa-chevron-down"></i></a>
+					<ul class="sub-menu right">
+					  <li><a href="https://www.frontbiomedical.com/" target="_blank" data-i18n="nav.biomed_consumables">生物耗材</a></li>
+					  <li><a href="https://szfront.cn" target="_blank" data-i18n="nav.biomed_scanning">扫描检测</a></li>
+					</ul>
+				  </li>
+				  <li style="margin-right: 30px;"><a href="javascript:;" data-i18n="nav.academy">采购通学院</a></li>
+				  <li style="margin-right: 30px;">
+					<a href="javascript:;" data-i18n="nav.about">关于我们<i class="fas fa-chevron-down"></i></a>
+					<ul class="sub-menu right">
+					  <li><a href="introduction.html" data-i18n="nav.intro">公司简介</a></li>
+					  <li><a href="customers.html" data-i18n="nav.customers">服务客户</a></li>
+					  <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+					</ul>
+				  </li>
+	  
+				  <!-- 移动端：把语言切换放到菜单底部 -->
+				  <li class="d-lg-none mt-2 px-3">
+					<div class="lang-switch d-flex gap-2">
+					  <button type="button" class="btn-lang" data-set-lang="zh">中</button>
+					  <button type="button" class="btn-lang" data-set-lang="en">EN</button>
+					</div>
+				  </li>
+				</ul>
+			  </div><!-- /.header-nav -->
+	  
+			  <!-- 桌面端：最右侧语言切换 -->
+			  <div class="dropdown d-none d-lg-block ms-3">
+				<button class="btn btn-md btn-outline-light dropdown-toggle"
+						type="button" id="langDropdown"
+						data-bs-toggle="dropdown" aria-expanded="false">
+				  <span id="langLabel" style="font-size: 14px; font-weight: bold;">中文</span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+				  <li><a class="dropdown-item" href="#" data-set-lang="zh">中文</a></li>
+				  <li><a class="dropdown-item" href="#" data-set-lang="en">English</a></li>
+				</ul>
+			  </div>
+			</div>
+		</div>
+	</header>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">

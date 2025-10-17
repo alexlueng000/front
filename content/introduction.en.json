@@ -1,0 +1,61 @@
+{
+    "page": {
+      "title": "Fraun Technology - Company Profile"
+    },
+    "hero": {
+      "title": "Company Profile"
+    },
+    "company": {
+      "title": "Fraun Technology",
+      "p1": "Founded in 2005, Fraun Technology is a leading integrated research service and innovation incubation platform in the Greater Bay Area. We empower universities, research institutes, and medical institutions with end-to-end scientific solutions. Originating from a state-owned enterprise background, our team combines market-oriented agility with strong research integration capabilities. With nearly 30 years of experience, Fraun has built a full-service ecosystem covering laboratory equipment, technical consulting, project collaboration, data management, and industrial incubation—serving over 100 institutions and becoming a benchmark in Shenzhen’s research service market.",
+      "p2": "Fraun’s Innovation Acceleration Engine strategically invests in frontier fields such as biotechnology, biomedicine, medical imaging, and government & industry consulting. We have successfully launched platforms for research equipment introduction, the SCANCO Micro CT China Service Center, serum and growth factor customization, procurement cloud platforms, and consulting services—driving innovation to commercial success. Our collaborative innovation network now connects 20+ major laboratories across the Greater Bay Area, delivering joint research outcomes to governments and industries.",
+      "values": {
+        "label": "Core Values:",
+        "text": "Integrity & Reliability, Client First, Pursuit of Excellence, Win-Win Collaboration"
+      },
+      "principles": {
+        "label": "Service Philosophy:",
+        "text": "Professional Focus, Innovative Service, Integrity-Based, Continuous Empowerment"
+      },
+      "vision": {
+        "label": "Vision:",
+        "text": "To become a leading regional platform for research empowerment"
+      },
+      "mission": {
+        "label": "Mission:",
+        "text": "To make research more efficient and innovation more valuable"
+      }
+    },
+    "timeline": {
+      "title": "Development Timeline",
+      "subtitle": "Innovation-Driven Growth",
+      "items": [
+        { "year": "Before 2005", "desc": "Engaged in government procurement and foreign trade outsourcing" },
+        { "year": "2006", "desc": "Built a new model of government procurement supply-chain platform" },
+        { "year": "2011", "desc": "Expanded into scientific procurement for universities, institutes, and hospitals" },
+        { "year": "2015", "desc": "Matured as a specialized government research supply platform" },
+        { "year": "2016", "desc": "Launched service-oriented investment projects" },
+        { "year": "2017", "desc": "Developed full-process e-procurement technology; incubated SME bidding agencies" },
+        { "year": "2018", "desc": "Became the first authorized importer of fetal bovine serum in Shenzhen Customs; now serving 200+ labs, the largest in the Bay Area" },
+        { "year": "2018", "desc": "Started Fraun Consulting—providing policy research, industrial planning, and customized consulting; introduced the G2B model and joined 20+ key projects" },
+        { "year": "2018", "desc": "Established SCANCO MicroCT China Shenzhen Service Center" },
+        { "year": "2019", "desc": "Partnered with 100+ universities and research institutes, becoming an industry benchmark" },
+        { "year": "2021", "desc": "Entered growth phase with services in scanning, bioconsumables, drug R&D, and stem cell translation" },
+        { "year": "2024", "desc": "Received AEO Advanced Enterprise Certification" },
+        { "year": "2024", "desc": "Reached 95%+ collaboration rate with Shenzhen universities; expanded to Guangzhou, Foshan, and Jiangmen" }
+      ]
+    },
+    "nav": {
+      "home": "Home",
+      "government": "Public Procurement",
+      "biomed": "Biomedical Research",
+      "biomed_consumables": "Consumables",
+      "biomed_scanning": "Scanning & Testing",
+      "academy": "Procurement Academy",
+      "about": "About Us",
+      "intro": "Company Profile",
+      "customers": "Clients",
+      "contact": "Contact Us"
+    }
+  }
+  
